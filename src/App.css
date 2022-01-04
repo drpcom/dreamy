@@ -1,0 +1,6 @@
+.main-content {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-items: center;
+  margin-top: 1rem;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Tags = () => {
+const Sidebar = () => {
     return (
         <div>
             <h1>here are the tags</h1>
@@ -8,5 +8,5 @@ const Tags = () => {
     )
 }
 
-export default Tags
+export default Sidebar
     
