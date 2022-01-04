@@ -1,0 +1,19 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-left: 1px solid lightgray;
+}
+
+.sidebar-title {
+  margin-top: 6rem;
+  margin-bottom: 0.6rem;
+}
+
+.sidebar-content {
+  font-size: 1.2rem;
+  list-style-type: "?";
+  text-indent: 0.6rem;
+  /* margin-left: -1.5rem; */
+}
