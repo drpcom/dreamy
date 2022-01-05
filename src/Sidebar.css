@@ -1,19 +1,20 @@
 .sidebar-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   border-left: 1px solid lightgray;
+  flex: 1;
 }
 
 .sidebar-title {
   margin-top: 6rem;
   margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar-content {
   font-size: 1.2rem;
   list-style-type: "?";
   text-indent: 0.6rem;
-  /* margin-left: -1.5rem; */
 }
