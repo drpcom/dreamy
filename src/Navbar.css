@@ -44,6 +44,14 @@
   padding: 10px;
 }
 
+.boogers {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(255 239 239);
+  padding: 10px;
+  background: #403e41;
+}
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -66,9 +74,18 @@
   padding: 5px;
 }
 
+.dropdown-open {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-closed {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .nav-menu {
-    display: block;
+    display: flex;
   }
 
   .nav-link {
@@ -76,6 +93,12 @@
   }
 
   .nav-search {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .dropdown-open {
     display: none;
   }
 }

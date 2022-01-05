@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => {
+        setClick(!click);
+        console.log(click)
+    }
+
+    const Close = () => {
+        setClick(false);
+    }
+
     return (
+        <>
         <nav className="nav-container">
             <div className="nav-left">
                 <div className="nav-logo">
@@ -21,11 +33,18 @@ const Navbar = () => {
                 <Link to="/random" className="nav-link">Random</Link>
                 <Link to="/join" className="nav-link">Join</Link>
                 <Link to="/login" className="nav-link">Login</Link>
-                <Link to="/" className="nav-menu">
+                <div className="nav-menu" onClick={() => handleClick()}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
-                </Link>
+                </div>
             </div>
         </nav>
+        <div className={click ? "dropdown-open" : "dropdown-closed"}>
+            <Link to="/browse" className="boogers">Browse</Link>
+            <Link to="/random" className="boogers">Random</Link>
+            <Link to="/join" className="boogers">Join</Link>
+            <Link to="/login" className="boogers">Login</Link>
+        </div>
+        </>
     )
 }
 
