@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
+import dice from './images/dice.png';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
                 <div className="nav-search">
                     <input type="text" placeholder='Search' />
                 </div>
-                <Link to="/random" className="nav-link">Random</Link>
+                <Link to="/random" className="nav-link"><img src={dice} alt="dice" /></Link>
                 <Link to="/join" className="nav-link">Join</Link>
                 <Link to="/login" className="nav-link">Login</Link>
                 <div className="nav-menu" onClick={() => handleClick()}>
@@ -39,10 +40,10 @@ const Navbar = () => {
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
-            <Link to="/browse" className="boogers">Browse</Link>
-            <Link to="/random" className="boogers">Random</Link>
-            <Link to="/join" className="boogers">Join</Link>
-            <Link to="/login" className="boogers">Login</Link>
+            <Link to="/browse" className="nav-link__burgered" onClick={() => Close()}>Browse</Link>
+            <Link to="/random" className="nav-link__burgered" onClick={() => Close()}>Random</Link>
+            <Link to="/join" className="nav-link__burgered" onClick={() => Close()}>Join</Link>
+            <Link to="/login" className="nav-link__burgered" onClick={() => Close()}>Login</Link>
         </div>
         </>
     )
