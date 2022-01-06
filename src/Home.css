@@ -1,2 +1,36 @@
 /* .home-container {
 } */
+
+.welcome-container {
+  display: flex;
+  background: #235c56;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.welcome-title {
+  display: flex;
+  font-size: 4rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 100;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.section-one {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+@media screen and (max-width: 600px) {
+  .section-one {
+    flex-wrap: wrap;
+  }
+}
+
+.section-three {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}

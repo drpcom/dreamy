@@ -1,0 +1,36 @@
+.featured-container {
+  margin: 2rem 2rem 0 2rem;
+  height: 341px;
+  line-height: 22px;
+}
+
+.featured-content {
+  /* height: 276px;
+  overflow: hidden; */
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+}
+
+.featured-heading {
+  margin-bottom: 0.5rem;
+}
+
+.featured-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: rgb(49, 47, 47);
+}
+
+.featured-content > img {
+  width: 9rem;
+  height: 9rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.featured-content > p {
+  font-size: 1.1rem;
+}
