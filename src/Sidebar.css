@@ -15,6 +15,11 @@
 
 .sidebar-content {
   font-size: 1.2rem;
-  list-style-type: "?";
-  text-indent: 0.6rem;
+  margin: 1rem;
+  /* list-style-type: "?";
+  text-indent: 0.6rem; */
+}
+
+.sidebar-content > p:nth-child(odd) {
+  background: #cadecb;
 }

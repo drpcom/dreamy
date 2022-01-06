@@ -7,17 +7,17 @@ const Sidebar = () => {
             <div className="sidebar-title">
                 <h2>Tags</h2>
             </div>
-            <ul className="sidebar-content">
-                <li>falling</li>
-                <li>being chased</li>
-                <li>dying</li>
-                <li>teeth</li>
-                <li>being naked in public</li>
-                <li>pregnancy</li>
-                <li>flying</li>
-                <li>cheating</li>
-                <li>false awakening</li>
-            </ul>
+            <div className="sidebar-content">
+                <p>falling</p>
+                <p>being chased</p>
+                <p>dying</p>
+                <p>teeth</p>
+                <p>being naked in public</p>
+                <p>pregnancy</p>
+                <p>flying</p>
+                <p>cheating</p>
+                <p>false awakening</p>
+            </div>
         </div>
     )
 }
