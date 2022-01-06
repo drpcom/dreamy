@@ -1,0 +1,30 @@
+.footer-container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 1px 50px 30px darkgrey;
+  background: #235c56;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0 7rem 0;
+  font-family: Spartan;
+  line-height: 1.5rem;
+}
+
+.footer-heading {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
