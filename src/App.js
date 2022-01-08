@@ -7,6 +7,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Home.js';
 import Footer from './Footer.js';
+import Falling from './articles/Falling';
 
 function App() {
   return (
@@ -19,13 +20,13 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/browse" element={<Browse />} />
+                <Route path="/articles/falling" element={<Falling />} />
               </Routes>
             </div>
             <Sidebar />
           </div>
         </div>
         <Footer />
-      
     </Router>
   );
 }

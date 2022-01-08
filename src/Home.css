@@ -5,7 +5,9 @@
   display: flex;
   background: #235c56;
   border-radius: 4px 0 0 0;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .welcome-title {
@@ -14,8 +16,21 @@
   font-family: "Spartan", sans-serif;
   font-weight: 100;
   margin-top: 5rem;
-  margin-bottom: 2rem;
   color: white;
+}
+
+.welcome-subtitle {
+  display: flex;
+  font-size: 0.6rem;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  margin-left: 22rem;
+}
+
+@media screen and (max-width: 425px) {
+  .welcome-subtitle {
+    margin-left: 0;
+  }
 }
 
 .section-one {
