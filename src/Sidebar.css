@@ -18,8 +18,20 @@
   margin: 1rem;
   /* list-style-type: "?";
   text-indent: 0.6rem; */
+  display: flex;
+  flex-direction: column;
 }
 
-.sidebar-content > p:nth-child(odd) {
+.sidebar-content > a,
+.sidebar-content > a:visited {
+  text-decoration: none;
+  color: rgb(49, 47, 47);
+}
+
+.sidebar-content > a:active {
+  text-decoration: underline;
+}
+
+.sidebar-content > a:nth-child(odd) {
   background: #cadecb;
 }

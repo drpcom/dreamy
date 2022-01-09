@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Article.css';
 import LatestBlurb from '../LatestBlurb';
+import { useDispatch } from 'react-redux';
+import { add } from '../features/tagsList';
 
 const Article = ({title, image, tags, overview, interpretation}) => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        let newArr = dispatch(add({ tags: tags}));
+        console.log(newArr)
+    }, [dispatch, tags])
+
     return (
         <div className="article-container">
             <div className="article-header">
                 <div className="article-header__header-section"></div>
                 <div className="article-header__buttons-container">
                     <button className="article-button">Top 5</button>
-                    <button className="article-button">again</button>
+                    <button className="article-button">ClapIcon 1043</button>
                     <button className="article-button">friend of a friend</button>
                     <button className="article-button">i knew you were</button>
                 </div>
