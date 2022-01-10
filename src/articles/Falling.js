@@ -1,6 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Article from './Article.js';
 import pineapple from '../images/pineapple.jpg';
+import { db } from '../backend/firebase_config';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
 const Falling = () => {
 
@@ -13,12 +17,34 @@ const Falling = () => {
     const [incrementMindblowing, setIncrementMindblowing] = useState(0);
     const [incrementSad, setIncrementSad] = useState(0);
     const [disable, setDisable] = useState(false);
+    const [flameLikes, setFlameLikes] = useState(0);
     
+
+    // useEffect(() => {
+    //         getFlameLikes()
+    // }, [])
+
+    // const getFlameLikes = () => {
+    //     db.collection("flameLikes").onSnapshot(function(querySnapshot) {
+    //         setFlameLikes(querySnapshot.docs.map((doc) => ({
+    //             addedLikes: doc.data().addedLikes,
+    //             alreadyLiked: doc.data().alreadyLiked,
+    //         })
+    //     ))
+    // })}
+
+    const increment = firebase.firestore.FieldValue.increment(1);
 
     const incrementFlames = () => {
         setFlamesCount(flamesCount+1);
         setDisable(true);
+
+        db.collection("flameLikes").doc("wq3pCeVBuNKws5JvsDru").update({
+            addedLikes: increment,
+            alreadyLiked: true,
+        })
     }
+
 
     return (
         <React.Fragment>
