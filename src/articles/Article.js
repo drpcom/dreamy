@@ -32,44 +32,6 @@ const Article = ({title, triggerWarning, image, imageSubheading, tags, overview,
 
     return (
         <div className="article-container">
-            <div className="article-header">
-                <div className="article-header__header-section"></div>
-                <div className="bumper-sticker-container">
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementFlames())}>
-                    <div className="bumper-sticker__count">{counters.flames}</div>
-                    {console.log(counters.flames)}
-                    <div className="bumper-sticker__image">🔥</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementLove())}>
-                        <div className="bumper-sticker__count">{counters.love}</div>
-                        <div className="bumper-sticker__image">😍</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementSexy())}>
-                        <div className="bumper-sticker__count">{counters.sexy}</div>
-                        <div className="bumper-sticker__image">🥵</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementNeutral())}>
-                        <div className="bumper-sticker__count">{counters.neutral}</div>
-                        <div className="bumper-sticker__image">😐</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementFunny())}>
-                        <div className="bumper-sticker__count">{counters.funny}</div>
-                        <div className="bumper-sticker__image">🤣</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementScary())}>
-                        <div className="bumper-sticker__count">{counters.scary}</div>
-                        <div className="bumper-sticker__image">😨</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementMindblowing())}>
-                        <div className="bumper-sticker__count">{counters.mindblowing}</div>
-                        <div className="bumper-sticker__image">🤯</div>
-                    </button>
-                    <button className="bumper-sticker" onClick={() => dispatch(incrementSad())}>
-                        <div className="bumper-sticker__count">{counters.sad}</div>
-                        <div className="bumper-sticker__image">😢</div>
-                    </button>
-                </div>
-            </div>
             <div className="article-title">
                 <h1>{title}</h1>
                 {triggerWarning ? <h4 className="trigger">[trigger warning]</h4> : null}

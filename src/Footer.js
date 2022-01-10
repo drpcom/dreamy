@@ -7,9 +7,9 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <p className="footer-heading">Explore</p>
-                    <p>Browse</p>
-                    <p>Tags</p>
-                    <p>Random</p>
+                    <p>Browse Articles</p>
+                    <p>Browse Tags</p>
+                    <p>Random Article</p>
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <p>Terms of Use</p>
                 </div>
                 <div className="footer-section">
-                    <p className="footer-heading">Info</p>
+                    <p className="footer-heading">Additional Info</p>
                     <p>Privacy Policy</p>
                     <p>Disclaimers</p>
                     <p>Patreon</p>

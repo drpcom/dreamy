@@ -1,10 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Article from './Article.js';
 import pineapple from '../images/pineapple.jpg';
 
 const Falling = () => {
+
+    const [flamesCount, setFlamesCount] = useState(0);
+    const [incrementLove, setIncrementLove] = useState(0);
+    const [incrementSexy, setIncrementSexy] = useState(0);
+    const [incrementNeutral, setIncrementNeutral] = useState(0);
+    const [incrementFunny, setIncrementFunny] = useState(0);
+    const [incrementScary, setIncrementScary] = useState(0);
+    const [incrementMindblowing, setIncrementMindblowing] = useState(0);
+    const [incrementSad, setIncrementSad] = useState(0);
+    const [disable, setDisable] = useState(false);
+    
+
+    const incrementFlames = () => {
+        setFlamesCount(flamesCount+1);
+        setDisable(true);
+    }
+
     return (
         <React.Fragment>
+        <div className="article-header">
+        {/*  <div className="article-header__header-section"></div> */}
+          <div className="bumper-sticker-container">
+              <button className="bumper-sticker" onClick={() => incrementFlames()} disabled={disable}>
+              <div className="bumper-sticker__count">{flamesCount}</div>
+              <div className="bumper-sticker__image">🔥</div>
+              </button>
+        {/*      <button className="bumper-sticker" onClick={() => dispatch(incrementLove())}>
+                  <div className="bumper-sticker__count">{counters.love}</div>
+                  <div className="bumper-sticker__image">😍</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementSexy())}>
+                  <div className="bumper-sticker__count">{counters.sexy}</div>
+                  <div className="bumper-sticker__image">🥵</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementNeutral())}>
+                  <div className="bumper-sticker__count">{counters.neutral}</div>
+                  <div className="bumper-sticker__image">😐</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementFunny())}>
+                  <div className="bumper-sticker__count">{counters.funny}</div>
+                  <div className="bumper-sticker__image">🤣</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementScary())}>
+                  <div className="bumper-sticker__count">{counters.scary}</div>
+                  <div className="bumper-sticker__image">😨</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementMindblowing())}>
+                  <div className="bumper-sticker__count">{counters.mindblowing}</div>
+                  <div className="bumper-sticker__image">🤯</div>
+              </button>
+              <button className="bumper-sticker" onClick={() => dispatch(incrementSad())}>
+                  <div className="bumper-sticker__count">{counters.sad}</div>
+                  <div className="bumper-sticker__image">😢</div>
+    </button> */}
+          </div>
+      </div>
                 <Article 
                 title="Classic Fall Dream"
                 triggerWarning={false}
