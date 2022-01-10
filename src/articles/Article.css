@@ -42,6 +42,10 @@
   border-bottom: 1px solid lightgray;
 }
 
+.trigger {
+  color: purple;
+}
+
 .article-content {
   margin-left: 2rem;
   margin-right: 2rem;

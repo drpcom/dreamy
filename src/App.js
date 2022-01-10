@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Home.js';
 import Footer from './Footer.js';
 import Falling from './articles/falling';
+import YouKilledKenny from './articles/you-killed-kenny';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/browse" element={<Browse />} />
                 <Route path="/articles/falling" element={<Falling />} />
+                <Route path="/articles/you-killed-kenny" element={<YouKilledKenny />} />
               </Routes>
             </div>
             <Sidebar />

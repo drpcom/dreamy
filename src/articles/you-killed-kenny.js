@@ -1,15 +1,15 @@
 import React from 'react';
 import Article from './Article.js';
-import pineapple from '../images/pineapple.jpg';
+import plainwater from '../images/plainwater.jpg';
 
-const Falling = () => {
+const YouKilledKenny = () => {
     return (
         <React.Fragment>
                 <Article 
-                title="Classic Fall Dream"
-                triggerWarning={false}
-                image={pineapple}
-                imageSubheading="Sure is a long way down..."
+                title="You Killed Kenny!"
+                triggerWarning={true}
+                image={plainwater}
+                imageSubheading="You bastards!"
                 tags={['exhilarating', 'fear', 'true awakening', 'recurring', 'pre-human', 'phobia', 'death', 'anxiety', 'pointless' ]}
                 overview=
                 "Recently, there has been a renewed interest in emo, especially midwest emo. These bands are heavily influenced by Cap'n Jazz and often have a strong bent towards math rock and post-rock in their song structure and guitar work. A few examples of these twinkledaddy bands are Street Smart Cyclist, Snowing, Algernon Cadwallader, The World Is A Beautiful Place & I Am No Longer Afraid to Die, and Glocca Morra. As this scene grew and grew in popularity, #emorevival became a near-mainstream style of indie rock which took from various facets of Midwest, screamo, and emo pop, as played by bands such as the Hotelier, Free Throw, and late-period You Blew It! There is even an emo pop revival scene centered around Midwest-influenced indie rock bands with mildly intricate guitar work and deeply personal, confessional lyrics. These bands include Modern Baseball, Sorority Noise, and the Front Bottoms. Within this scene is a style known as sparklepunk, which combines Braid-like twinkles with lo-fi, noodly college rock guitar work, built around a base of pop-punk. Sparklepunk bands include Mom Jeans, Darkle, and Donovan Wolfington."
@@ -20,4 +20,4 @@ const Falling = () => {
     )
 }
 
-export default Falling
+export default YouKilledKenny;
