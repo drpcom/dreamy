@@ -7,9 +7,12 @@ export const tagsListSlice = createSlice({
         add: ( state, action ) => {
             state.value = action.payload;
         },
+        remove: ( state ) => {
+            state.value = []
+        },
     },
 });
 
-export const { add } = tagsListSlice.actions;
+export const { add, remove } = tagsListSlice.actions;
 
 export default tagsListSlice.reducer;

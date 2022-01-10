@@ -3,25 +3,57 @@ import './Article.css';
 import LatestBlurb from '../LatestBlurb';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
+import { remove } from '../features/tagsList';
 
-const Article = ({title, image, tags, overview, interpretation}) => {
+const Article = ({title, image, imageSubheading, tags, overview, interpretation, relatedArticles}) => {
 
     const dispatch = useDispatch();
 
     useEffect(() => {
         let newArr = dispatch(add({ tags: tags}));
         console.log(newArr)
-    }, [dispatch, tags])
+        return () => {
+            dispatch(remove());
+        }
+        }, [dispatch, tags])
 
     return (
         <div className="article-container">
             <div className="article-header">
                 <div className="article-header__header-section"></div>
-                <div className="article-header__buttons-container">
-                    <button className="article-button">Top 5</button>
-                    <button className="article-button">ClapIcon 1043</button>
-                    <button className="article-button">friend of a friend</button>
-                    <button className="article-button">i knew you were</button>
+                <div className="bumper-sticker-container">
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">🔥</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">😍</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">🥵</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">😐</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">🤣</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">😨</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">🤯</div>
+                    </button>
+                    <button className="bumper-sticker">
+                        <div className="bumper-sticker__count">0</div>
+                        <div className="bumper-sticker__image">😢</div>
+                    </button>
                 </div>
             </div>
             <div className="article-title">
@@ -32,7 +64,7 @@ const Article = ({title, image, tags, overview, interpretation}) => {
                     <div className="section-one__image">
                         <img src={image} alt={image} />
                         <div className="image-subheading-container">
-                            <p>Hello again friend of a friend I knew you were. Hello again friend of a friend I knew you were. Hello again friend of a friend I knew you were. Hello again friend of a friend I knew you were. Hello again friend of a friend I knew you were. Hello again friend of a friend I knew you were.</p>
+                            <p>{imageSubheading}</p>
                         </div>
                     </div>
 
@@ -44,7 +76,7 @@ const Article = ({title, image, tags, overview, interpretation}) => {
                     <p>{interpretation}</p>
                 </div>
                 <div className="article-content__section-three">
-                    <LatestBlurb heading="Related Articles" titles={["dunsparce", "blaziken", "dusklops", "tropius", "metagross", "lugia"]} />
+                    <LatestBlurb heading="Related Articles" titles={relatedArticles} />
                 </div>
             </div>
         </div>

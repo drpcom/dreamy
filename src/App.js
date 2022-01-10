@@ -7,7 +7,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Home.js';
 import Footer from './Footer.js';
-import Falling from './articles/Falling';
+import Falling from './articles/falling';
 
 function App() {
   return (

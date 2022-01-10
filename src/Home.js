@@ -1,12 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Home.css';
 import FeaturedBlurb from './FeaturedBlurb.js';
 import LatestBlurb from './LatestBlurb.js';
 import pineapple from './images/pineapple.jpg';
 import plainwater from './images/plainwater.jpg';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { add } from './features/tagsList';
+import { remove } from './features/tagsList';
 
 const Home = () => {
+
+    const homeTags = ['exhilarating', 'fear', 'true awakening', 'recurring', 'pre-human', 'phobia', 'death', 'anxiety', 'pointless', 'ominous', 'funny', 'morbid', 'foreboding', 'super powers', 'school' ]
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        let newArr = dispatch(add({ tags: homeTags}));
+        console.log(newArr)
+        return () => {
+            dispatch(remove());
+        }
+        }, [dispatch, homeTags])
+
     return (
         <div className="home-container">
             <div className="welcome-container">
