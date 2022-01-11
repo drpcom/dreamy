@@ -32,8 +32,6 @@ const Navbar = () => {
                     <input type="text" placeholder='Search' />
                 </div>
                 <Link to="/random" className="nav-link"><img src={dice} alt="dice" /></Link>
-                <Link to="/join" className="nav-link">Join</Link>
-                <Link to="/login" className="nav-link">Login</Link>
                 <div className="nav-menu" onClick={() => handleClick()}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </div>
@@ -42,8 +40,6 @@ const Navbar = () => {
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
             <Link to="/browse" className="nav-link__burgered" onClick={() => Close()}>Browse</Link>
             <Link to="/random" className="nav-link__burgered" onClick={() => Close()}>Random</Link>
-            <Link to="/join" className="nav-link__burgered" onClick={() => Close()}>Join</Link>
-            <Link to="/login" className="nav-link__burgered" onClick={() => Close()}>Login</Link>
         </div>
         </>
     )

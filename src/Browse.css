@@ -1,0 +1,43 @@
+.browse-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.browse-header {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.browse-title {
+  color: #235c56;
+}
+
+.mini-article-container {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  /* height: 8.5rem; */
+  margin: 1rem;
+  border-left: 0.1rem solid lightgray;
+  padding-left: 2rem;
+}
+
+.mini-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.mini-title > a:link,
+.mini-title > a:visited {
+  text-decoration: none;
+  color: #235c56;
+}
+
+.mini-desc {
+  font-size: 1rem;
+}
