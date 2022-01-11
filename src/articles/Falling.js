@@ -8,43 +8,81 @@ import 'firebase/compat/firestore';
 
 const Falling = () => {
 
-    const [flamesCount, setFlamesCount] = useState(0);
-    const [incrementLove, setIncrementLove] = useState(0);
-    const [incrementSexy, setIncrementSexy] = useState(0);
-    const [incrementNeutral, setIncrementNeutral] = useState(0);
-    const [incrementFunny, setIncrementFunny] = useState(0);
-    const [incrementScary, setIncrementScary] = useState(0);
-    const [incrementMindblowing, setIncrementMindblowing] = useState(0);
-    const [incrementSad, setIncrementSad] = useState(0);
+    const [data, setData] = useState([]);
     const [disable, setDisable] = useState(false);
     
 
     useEffect(() => {
-            getFlameLikes()
+            getAllLikes()
     }, [])
 
-    const data = [];
-
-    const getFlameLikes = async () => {
-        const flameRef = db.collection('likes').doc('flame');
-        const doc = await flameRef.get();
-        if (!doc.exists) {
-        console.log('No such document!');
-        } else {
-        console.log(doc.data().addedLikes);
-        
-    }
-    setFlamesCount(doc.data().addedLikes)
-    console.log(doc.data().addedLikes)
+    const getAllLikes = () => {
+        db.collection('likes').onSnapshot(function (querySnapshot) {
+            const data= [];
+            querySnapshot.forEach( doc => {
+              console.log("Likes : ", doc.data().addedLikes);
+              data.push(doc.data().addedLikes)
+            })
+            setData(data);
+            console.log(data)
+        })
     }
 
     const increment = firebase.firestore.FieldValue.increment(1);
 
-    const incrementFlames = () => {
-        setFlamesCount(flamesCount+1);
+    const incrementFlame = () => {
         setDisable(true);
 
         db.collection("likes").doc("flame").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementLove = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("love").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementSexy = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("sexy").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementNeutral = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("neutral").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementFunny = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("funny").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementScary = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("scary").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementMindblowing = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("mindblowing").update({
+            addedLikes: increment,
+        })
+    }
+    const incrementSad = () => {
+        setDisable(true);
+
+        db.collection("likes").doc("sad").update({
             addedLikes: increment,
         })
     }
@@ -55,38 +93,38 @@ const Falling = () => {
         <div className="article-header">
         {/*  <div className="article-header__header-section"></div> */}
           <div className="bumper-sticker-container">
-              <button className="bumper-sticker" onClick={() => incrementFlames()} disabled={disable}>
-              <div className="bumper-sticker__count">{flamesCount}</div>
+              <button className="bumper-sticker" onClick={() => incrementFlame()} disabled={disable}>
+              <div className="bumper-sticker__count">{data[0]}</div>
               <div className="bumper-sticker__image">🔥</div>
               </button>
-        {/*      <button className="bumper-sticker" onClick={() => dispatch(incrementLove())}>
-                  <div className="bumper-sticker__count">{counters.love}</div>
+              <button className="bumper-sticker" onClick={() => incrementLove()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[2]}</div>
                   <div className="bumper-sticker__image">😍</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementSexy())}>
-                  <div className="bumper-sticker__count">{counters.sexy}</div>
+              <button className="bumper-sticker" onClick={() => incrementSexy()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[7]}</div>
                   <div className="bumper-sticker__image">🥵</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementNeutral())}>
-                  <div className="bumper-sticker__count">{counters.neutral}</div>
+              <button className="bumper-sticker" onClick={() => incrementNeutral()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[4]}</div>
                   <div className="bumper-sticker__image">😐</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementFunny())}>
-                  <div className="bumper-sticker__count">{counters.funny}</div>
+              <button className="bumper-sticker" onClick={() => incrementFunny()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[1]}</div>
                   <div className="bumper-sticker__image">🤣</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementScary())}>
-                  <div className="bumper-sticker__count">{counters.scary}</div>
+              <button className="bumper-sticker" onClick={() => incrementScary()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[6]}</div>
                   <div className="bumper-sticker__image">😨</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementMindblowing())}>
-                  <div className="bumper-sticker__count">{counters.mindblowing}</div>
+              <button className="bumper-sticker" onClick={() => incrementMindblowing()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[3]}</div>
                   <div className="bumper-sticker__image">🤯</div>
               </button>
-              <button className="bumper-sticker" onClick={() => dispatch(incrementSad())}>
-                  <div className="bumper-sticker__count">{counters.sad}</div>
+              <button className="bumper-sticker" onClick={() => incrementSad()} disabled={disable}>
+                  <div className="bumper-sticker__count">{data[5]}</div>
                   <div className="bumper-sticker__image">😢</div>
-    </button> */}
+                </button> 
           </div>
       </div>
                 <Article 
