@@ -17,21 +17,26 @@ const Falling = () => {
     const [incrementMindblowing, setIncrementMindblowing] = useState(0);
     const [incrementSad, setIncrementSad] = useState(0);
     const [disable, setDisable] = useState(false);
-    const [flameLikes, setFlameLikes] = useState(0);
     
 
-    // useEffect(() => {
-    //         getFlameLikes()
-    // }, [])
+    useEffect(() => {
+            getFlameLikes()
+    }, [])
 
-    // const getFlameLikes = () => {
-    //     db.collection("flameLikes").onSnapshot(function(querySnapshot) {
-    //         setFlameLikes(querySnapshot.docs.map((doc) => ({
-    //             addedLikes: doc.data().addedLikes,
-    //             alreadyLiked: doc.data().alreadyLiked,
-    //         })
-    //     ))
-    // })}
+    const data = [];
+
+    const getFlameLikes = async () => {
+        const flameRef = db.collection('likes').doc('flame');
+        const doc = await flameRef.get();
+        if (!doc.exists) {
+        console.log('No such document!');
+        } else {
+        console.log(doc.data().addedLikes);
+        
+    }
+    setFlamesCount(doc.data().addedLikes)
+    console.log(doc.data().addedLikes)
+    }
 
     const increment = firebase.firestore.FieldValue.increment(1);
 
@@ -39,9 +44,8 @@ const Falling = () => {
         setFlamesCount(flamesCount+1);
         setDisable(true);
 
-        db.collection("flameLikes").doc("wq3pCeVBuNKws5JvsDru").update({
+        db.collection("likes").doc("flame").update({
             addedLikes: increment,
-            alreadyLiked: true,
         })
     }
 

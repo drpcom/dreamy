@@ -21,14 +21,14 @@ const Article = ({title, triggerWarning, image, imageSubheading, tags, overview,
 
     useEffect(() => {
         let newArr = dispatch(add({ tags: tags}));
-        console.log(newArr)
+        // console.log(newArr)
         return () => {
             dispatch(remove());
         }
         }, [dispatch, tags])
 
         const counters = useSelector(state => state.counters.value)
-        console.log(counters)
+        // console.log(counters)
 
     return (
         <div className="article-container">
