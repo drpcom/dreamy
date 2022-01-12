@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 import allArticles from './allArticles';
-import { Link } from 'react-router-dom';
 
 const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags, overview, interpretation, relatedArticles}) => {
 
@@ -50,7 +49,7 @@ const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags,
                         {lastFive.map((item, i) => {
                             return (
                                 <div key={i} className="latest-content">
-                                    <Link to={item.route}>{item.title}</Link>
+                                    <a href={item.route}>{item.title}</a>
                                 </div>
                             )
                         })}
