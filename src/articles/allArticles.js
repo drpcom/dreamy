@@ -67,7 +67,7 @@ const allArticles = [
         imageOne: "",
         imageSubheading: "",
         imageTwo: "",
-        tags: ['pointless'],
+        tags: ['pointless', 'school'],
         overview: "",
         interpretation: "",
         relatedArticles: []

@@ -4,16 +4,22 @@ import Sidebar from './Sidebar.js';
 import Content from './Content.js';
 import Browse from './Browse.js';
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import Home from './Home.js';
 import Footer from './Footer.js';
 import Falling from './articles/falling';
 import YouKilledKenny from './articles/you-killed-kenny';
+import EachTagPage from './EachTagPage';
+import allTags from './articles/allTags';
 
 function App() {
+
   return (
     <Router>
         <Navbar />
+        {allTags.map((tag) => {
+          <Link to={'tags/' + tag.id} />
+        })}
         <div className="main-container">
           <div className="main-content">
             <div className="main">
@@ -23,6 +29,7 @@ function App() {
                 <Route path="/browse" element={<Browse />} />
                 <Route path="/articles/falling" element={<Falling />} />
                 <Route path="/articles/you-killed-kenny" element={<YouKilledKenny />} />
+                <Route path="/tags/:id" element={<EachTagPage />} />
               </Routes>
             </div>
             <Sidebar />
