@@ -25,7 +25,7 @@ const allTags = [
     {id: 'funny'},
     {id: 'childhood'},
     {id: 'super powers'},
-    {id: 'wake up mad'}, 
+    {id: 'woke up mad'}, 
     {id: 'anger'}, 
     {id: 'frustration'},
 ]

@@ -101,13 +101,13 @@ const allArticles = [
         imageOne: dreamArguing,
         imageSubheading: "Sure is a long way down...",
         imageTwo: imgTwoPlaceholder,
-        tags: ['wake up mad', 'fear', 'recurring', 'anger', 'frustration', 'anxiety'],
+        tags: ['woke up mad', 'fear', 'recurring', 'anger', 'frustration', 'anxiety'],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
         ],
         interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
-        relatedArticles: ["dunsparce", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
         
     },
 ]
