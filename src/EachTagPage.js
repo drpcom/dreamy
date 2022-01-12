@@ -17,7 +17,7 @@ const EachTagPage = () => {
                         <FeaturedBlurb 
                         heading={null}
                         title={<a href={article.route}>{article.title}</a>}
-                        image={null}
+                        image={article.imageOne}
                         text={article.overview}
                         link={article.route}
                         />

@@ -1,7 +1,5 @@
 import React from 'react'
 import './Browse.css';
-import FeaturedBlurb from './FeaturedBlurb';
-import plainwater from './images/plainwater.jpg';
 import allArticles from './articles/allArticles';
 
 const Browse = () => {

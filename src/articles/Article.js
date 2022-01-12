@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react';
 import './Article.css';
-import LatestBlurb from '../LatestBlurb';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
+import allArticles from './allArticles';
+import { Link } from 'react-router-dom';
 
 const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags, overview, interpretation, relatedArticles}) => {
 
@@ -16,7 +17,10 @@ const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags,
         }
         }, [dispatch, tags])
 
+    const lastFive = allArticles.slice(-5);
+
     return (
+        
         <div className="article-container">
             <div className="article-title">
                 <h1>{title}</h1>
@@ -39,7 +43,18 @@ const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags,
                     <p>{interpretation}</p>
                 </div>
                 <div className="article-content__section-three">
-                    <LatestBlurb heading="Related Articles" titles={relatedArticles} />
+                    <div className="latest-container">
+                        <div className="latest-heading">
+                            <p>Related Articles</p>
+                        </div>
+                        {lastFive.map((item, i) => {
+                            return (
+                                <div key={i} className="latest-content">
+                                    <Link to={item.route}>{item.title}</Link>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

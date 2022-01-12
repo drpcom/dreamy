@@ -44,6 +44,32 @@
   }
 }
 
+.latest-container {
+  margin: 2rem;
+}
+
+.latest-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(49, 47, 47);
+  margin-bottom: 0.5rem;
+  background: #f1cfa3;
+}
+
+.latest-content {
+  font-size: 1.1rem;
+}
+
+.latest-content > a:link,
+.latest-content > a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.latest-content:nth-child(even) {
+  background: #cadecb;
+}
+
 .section-three {
   display: flex;
   border-bottom: 1px solid lightgray;
