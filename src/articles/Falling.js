@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Article from './Article.js';
-import pineapple from '../images/pineapple.jpg';
 import { db } from '../backend/firebase_config';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
@@ -127,9 +126,9 @@ const Falling = () => {
                 <Article 
                 title={allArticles[0].title}
                 triggerWarning={allArticles[0].triggerWarning}
-                image={pineapple}
+                image={allArticles[0].imageOne}
                 imageSubheading={allArticles[0].imageSubheading}
-                imageTwo={pineapple}
+                imageTwo={allArticles[0].imageTwo}
                 tags={allArticles[0].tags}
                 overview={allArticles[0].overview.join("\n\n")}
                 interpretation={allArticles[0].interpretation}

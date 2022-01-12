@@ -6,7 +6,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import allArticles from './allArticles.js';
 
-const YouKilledKenny = () => {
+const ConfusionIllusion = () => {
     const [data, setData] = useState([]);
     const [disable, setDisable] = useState(false);
     
@@ -16,7 +16,7 @@ const YouKilledKenny = () => {
     }, [])
 
     const getAllLikes = () => {
-        db.collection('you-killed-kenny').onSnapshot(function (querySnapshot) {
+        db.collection('dream-arguing').onSnapshot(function (querySnapshot) {
             const data= [];
             querySnapshot.forEach( doc => {
               data.push(doc.data().addedLikes)
@@ -30,56 +30,56 @@ const YouKilledKenny = () => {
     const incrementFlame = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("flame").update({
+        db.collection("dream-arguing").doc("flame").update({
             addedLikes: increment,
         })
     }
     const incrementLove = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("love").update({
+        db.collection("dream-arguing").doc("love").update({
             addedLikes: increment,
         })
     }
     const incrementSexy = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("sexy").update({
+        db.collection("dream-arguing").doc("sexy").update({
             addedLikes: increment,
         })
     }
     const incrementNeutral = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("neutral").update({
+        db.collection("dream-arguing").doc("neutral").update({
             addedLikes: increment,
         })
     }
     const incrementFunny = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("funny").update({
+        db.collection("dream-arguing").doc("funny").update({
             addedLikes: increment,
         })
     }
     const incrementScary = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("scary").update({
+        db.collection("dream-arguing").doc("scary").update({
             addedLikes: increment,
         })
     }
     const incrementMindblowing = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("mindblowing").update({
+        db.collection("dream-arguing").doc("mindblowing").update({
             addedLikes: increment,
         })
     }
     const incrementSad = () => {
         setDisable(true);
 
-        db.collection("you-killed-kenny").doc("sad").update({
+        db.collection("dream-arguing").doc("sad").update({
             addedLikes: increment,
         })
     }
@@ -125,18 +125,18 @@ const YouKilledKenny = () => {
 
 
                 <Article 
-                title={allArticles[1].title}
-                triggerWarning={allArticles[1].triggerWarning}
-                image={allArticles[1].imageOne}
-                imageSubheading={allArticles[1].imageSubheading}
-                imageTwo={allArticles[1].imageTwo}
-                tags={allArticles[1].tags}
-                overview={allArticles[1].overview}
-                interpretation={allArticles[1].interpretation}
-                relatedArticles={allArticles[1].relatedArticles}
+                title={allArticles[4].title}
+                triggerWarning={allArticles[4].triggerWarning}
+                image={allArticles[4].imageOne}
+                imageSubheading={allArticles[4].imageSubheading}
+                imageTwo={allArticles[4].imageTwo}
+                tags={allArticles[4].tags}
+                overview={allArticles[4].overview.join("\n\n")}
+                interpretation={allArticles[4].interpretation}
+                relatedArticles={allArticles[4].relatedArticles}
                 />
         </React.Fragment>
     )
 }
 
-export default YouKilledKenny;
+export default ConfusionIllusion;

@@ -14,7 +14,6 @@ const Footer = () => {
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>
                     <p>What is Dreamy.io?</p>
-                    <p>About</p>
                     <p>Contact Us</p>
                     <p>Terms of Use</p>
                 </div>

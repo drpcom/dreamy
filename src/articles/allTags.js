@@ -25,6 +25,9 @@ const allTags = [
     {id: 'funny'},
     {id: 'childhood'},
     {id: 'super powers'},
+    {id: 'wake up mad'}, 
+    {id: 'anger'}, 
+    {id: 'frustration'},
 ]
 
 export default allTags;

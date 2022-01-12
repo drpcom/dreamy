@@ -44,7 +44,7 @@ const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags,
                 <div className="article-content__section-three">
                     <div className="latest-container">
                         <div className="latest-heading">
-                            <p>Related Articles</p>
+                            <p>Latest Articles</p>
                         </div>
                         {lastFive.map((item, i) => {
                             return (
