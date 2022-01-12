@@ -18,7 +18,7 @@ function App() {
     <Router>
         <Navbar />
         {allTags.map((tag) => {
-          <Link to={'tags/' + tag.id} />
+          <Link to={tag.id} />
         })}
         <div className="main-container">
           <div className="main-content">
@@ -27,9 +27,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/browse" element={<Browse />} />
-                <Route path="/articles/falling" element={<Falling />} />
-                <Route path="/articles/you-killed-kenny" element={<YouKilledKenny />} />
-                <Route path="/tags/:id" element={<EachTagPage />} />
+                <Route path="/falling" element={<Falling />} />
+                <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
+                <Route path=":id" element={<EachTagPage />} />
               </Routes>
             </div>
             <Sidebar />

@@ -7,7 +7,7 @@ import confusion from '../images/confusion.jpg';
 const allArticles = [
     {
         id:0, 
-        route: "articles/falling",
+        route: "falling",
         title: 'Classic Fall Dream', 
         triggerWarning: false,
         imageOne: pineapple,
@@ -25,7 +25,7 @@ const allArticles = [
     },
     {
         id:1, 
-        route: "articles/you-killed-kenny",
+        route: "you-killed-kenny",
         title: 'You Killed Kenny!', 
         triggerWarning: true,
         imageOne: plainwater,
@@ -39,7 +39,7 @@ const allArticles = [
     },
     {
         id:2, 
-        route: "articles/planet-hopping",
+        route: "planet-hopping",
         title: 'Planet Hopping', 
         triggerWarning: false,
         imageOne: hopping,
@@ -53,7 +53,7 @@ const allArticles = [
     },
     {
         id:3, 
-        route: "articles/why-am-i-always-in-school",
+        route: "why-am-i-always-in-school",
         title: 'Why am I always in school?', 
         triggerWarning: false,
         imageOne: school,
@@ -67,7 +67,7 @@ const allArticles = [
     },
     {
         id:4, 
-        route: "articles/confusion-illusion",
+        route: "confusion-illusion",
         title: 'Confusion Illusion', 
         triggerWarning: false,
         imageOne: confusion,

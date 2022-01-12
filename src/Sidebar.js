@@ -16,7 +16,7 @@ const Sidebar = () => {
             <div className="sidebar-content">
                 {tagsList.tags ? tagsList.tags.map((item, i) => {
                     return (
-                            <Link to={`/tags/${item}`} key={i}>{item}</Link>
+                            <Link to={item} key={i}>{item}</Link>
                     )
                 }) : null }
             </div>
