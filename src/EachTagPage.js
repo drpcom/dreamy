@@ -10,15 +10,33 @@ import { remove } from './features/tagsList';
 const EachTagPage = () => {
     let params = useParams();
 
+    function Randomize(array) {
+        let currentIndex = array.length,  randomIndex;
+      
+        // While there remain elements to shuffle...
+        while (currentIndex != 0) {
+      
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+      
+          // And swap it with the current element.
+          [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+      
+        return array;
+      }
+
     let tagsOnTags = [];
     let newArr = [];
-    // let tagsOnTags = ['exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh', 'anxiety', 'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
     allArticles.forEach((article) => {
         if (article.tags.includes(params.id)) { 
             newArr.push(article.tags)
             let merged = [].concat.apply([], newArr);
-            let uniqueTags = [...new Set(merged)]; // array of unique tags based on relevant articles.
-            tagsOnTags = uniqueTags;
+            let uniqueTags = [...new Set(merged)]; // Array of unique tags based on relevant articles.
+            let trueTags = Randomize(uniqueTags); // Randomize array
+            tagsOnTags = trueTags;
         }
     })
     
