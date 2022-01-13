@@ -22,6 +22,11 @@
   margin-bottom: 0.5rem;
 }
 
+.footer-section > a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
   .footer-container {
     margin-left: 0;

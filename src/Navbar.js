@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 import dice from './images/dice.png';
+import SearchBar from './SearchBar.js';
+import allArticles from './articles/allArticles';
+import allTags from './articles/allTags';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -29,7 +32,7 @@ const Navbar = () => {
             </div>
             <div className="nav-right">
                 <div className="nav-search">
-                    <input type="text" placeholder='Search' />
+                    <SearchBar allArticles={allArticles} allTags={allTags} />
                 </div>
                 <Link to="/random" className="nav-link"><img src={dice} alt="dice" /></Link>
                 <div className="nav-menu" onClick={() => handleClick()}>

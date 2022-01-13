@@ -1,0 +1,47 @@
+.data-result {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 0.2rem;
+  width: 260px;
+  height: 208px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.data-result::-webkit-scrollbar {
+  display: none;
+}
+
+.search-input > input {
+  font-size: 1.3rem;
+  border-radius: 4px 4px 0 0;
+  border: none;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-indent: 5px;
+}
+
+.search-input > input:focus {
+  outline: none;
+}
+
+.search-link {
+  background: white;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  line-height: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.search-link > a:visited {
+  color: rgb(54, 54, 54);
+}
+
+.search-link:hover {
+  background: rgb(209, 209, 209);
+  transition: all 0.1s ease-in-out;
+}

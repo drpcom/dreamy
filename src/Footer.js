@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <p className="footer-heading">Explore</p>
-                    <p>Browse Articles</p>
+                    <NavLink to="/browse">Browse Articles</NavLink>
                     <p>Browse Tags</p>
                     <p>Random Article</p>
                 </div>
