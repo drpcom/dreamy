@@ -36,7 +36,7 @@ const EachTagPage = () => {
             let merged = [].concat.apply([], newArr);
             let uniqueTags = [...new Set(merged)]; // Array of unique tags based on relevant articles.
             let trueTags = Randomize(uniqueTags); // Randomize array
-            tagsOnTags = trueTags;
+            tagsOnTags = trueTags.slice(0,20); // Show max 20 results.
         }
     })
     

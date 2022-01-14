@@ -1,8 +1,8 @@
 import React from 'react'
-import './Browse.css';
+import './BrowseArticles.css';
 import allArticles from './articles/allArticles';
 
-const Browse = () => {
+const BrowseArticles = () => {
     return (
         <div className="browse-container">
             <div className="browse-header">
@@ -12,6 +12,9 @@ const Browse = () => {
             {allArticles.map((article, i) => {
                 return (
                     <div key={i} className="mini-article-container">
+                        <div className="mini-image-container">
+                            <img src={article.imageOne} alt={article.id} />
+                        </div>
                         <div className="mini-title">
                             <a href={article.route}>{article.title}</a>
                         </div>
@@ -23,4 +26,4 @@ const Browse = () => {
     )
 }
 
-export default Browse
+export default BrowseArticles;

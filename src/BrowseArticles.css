@@ -18,12 +18,22 @@
 .mini-article-container {
   display: -webkit-inline-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   overflow: hidden;
-  /* height: 8.5rem; */
+  height: 8.5rem;
   margin: 1rem;
   border-left: 0.1rem solid lightgray;
   padding-left: 2rem;
+}
+
+.mini-image-container {
+  width: 200px;
+}
+
+.mini-image-container > img {
+  width: 100%;
+  float: left;
+  margin-right: 1rem;
 }
 
 .mini-title {

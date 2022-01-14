@@ -28,7 +28,9 @@ const Navbar = () => {
                     </Link>
                     <Link to="/" className="nav-logo__title">dreamy.io</Link>
                 </div>
-                <Link to="/browse" className="nav-link">Browse</Link>
+                <Link to="/browse-articles" className="nav-link">Articles</Link>
+                <p className="nav-divider">|</p>
+                <Link to="/browse-tags" className="nav-link">Tags</Link>
             </div>
             <div className="nav-right">
                 <div className="nav-search">
@@ -41,7 +43,8 @@ const Navbar = () => {
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
-            <Link to="/browse" className="nav-link__burgered" onClick={() => Close()}>Browse</Link>
+            <Link to="/browse-articles" className="nav-link__burgered" onClick={() => Close()}>Articles</Link>
+            <Link to="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</Link>
             <Link to="/random" className="nav-link__burgered" onClick={() => Close()}>Random</Link>
         </div>
         </>

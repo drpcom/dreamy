@@ -1,0 +1,38 @@
+.tags-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  place-items: center;
+}
+
+.tags-title {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #235c56;
+}
+
+.tags-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lonely-tag {
+  padding: 0.5rem;
+}
+
+.lonely-tag > a {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  font-size: 1.2rem;
+}
+
+.lonely-tag > a:hover {
+  text-decoration: underline;
+}
+
+.dashes {
+  color: #235c56;
+}

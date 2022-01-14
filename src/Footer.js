@@ -8,8 +8,8 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <p className="footer-heading">Explore</p>
-                    <NavLink to="/browse">Browse Articles</NavLink>
-                    <p>Browse Tags</p>
+                    <NavLink to="/browse-articles"><p>Browse Articles</p></NavLink>
+                    <NavLink to="/browse-tags"><p>Browse Tags</p></NavLink>
                     <p>Random Article</p>
                 </div>
                 <div className="footer-section">

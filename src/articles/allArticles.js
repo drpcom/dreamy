@@ -9,7 +9,7 @@ import dreamArguing from '../images/dreamArguing.jpg';
 const allArticles = [
     {
         id:0, 
-        route: "falling",
+        route: "classic-fall-dream",
         title: 'Classic Fall Dream', 
         triggerWarning: false,
         imageOne: pineapple,
