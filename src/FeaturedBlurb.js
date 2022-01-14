@@ -13,7 +13,7 @@ const FeaturedBlurb = ({heading, title, image, text, link}) => {
             <div className="featured-content">
                 <img src={image} alt={image} /><p>{text}</p>
             </div>
-            <a href={link}>More...</a>
+            <a href={link} className="featured-more">More...</a>
         </div>
     )
 }

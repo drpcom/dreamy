@@ -23,7 +23,7 @@
 
 .featured-title > a:link,
 .featured-title > a:visited {
-  color: rgb(49, 47, 47);
+  color: #235c56;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
@@ -42,4 +42,13 @@
 
 .featured-content > p {
   font-size: 1.1rem;
+}
+
+.featured-more {
+  text-decoration: none;
+  color: #235c56;
+}
+
+.featured-more:hover {
+  text-decoration: underline;
 }

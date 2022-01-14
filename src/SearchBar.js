@@ -1,5 +1,4 @@
 import React,{ useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './SearchBar.css';
 
 const SearchBar = ({allArticles, allTags}) => {
@@ -47,7 +46,9 @@ const SearchBar = ({allArticles, allTags}) => {
         setFilteredData([]);
     })
 
-
+    const clearResults = () => {
+        setFilteredData([])
+    }
     return (
         <>
             <div className="search-input">
@@ -55,9 +56,9 @@ const SearchBar = ({allArticles, allTags}) => {
                 <div className="search-icon"></div>
             </div>
             {filteredData.length !== 0 && (
-            <div className="data-result" ref={domNode}>
+            <div className="data-result" ref={domNode} onClick={clearResults}>
                 {filteredData.slice(0, 15).map((value, i) => {
-                    return <Link to={value} key={i} className="search-link">{value}</Link>
+                    return <a href={value} key={i} className="search-link">{value}</a>
                 })}
             </div>
             )}

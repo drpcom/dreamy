@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './BrowseArticles.css';
 import allArticles from './articles/allArticles';
+import { useDispatch } from 'react-redux';
+import { add } from './features/tagsList';
+import { remove } from './features/tagsList';
 
 const BrowseArticles = () => {
+
+    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(add({ tags: baseTags}));
+        return () => {
+            dispatch(remove());
+        }
+        })
+
     return (
         <div className="browse-container">
             <div className="browse-header">
