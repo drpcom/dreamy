@@ -1,14 +1,14 @@
-import './App.css';
-import Navbar from './Navbar.js';
-import Sidebar from './Sidebar.js';
-import BrowseArticles from './BrowseArticles.js';
 import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar.js';
+import Sidebar from './components/Sidebar.js';
+import Footer from './components/Footer.js';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './Home.js';
-import Footer from './Footer.js';
-import BrowseTags from './BrowseTags.js'
-import EachTagPage from './EachTagPage';
-import Falling from './articles/falling';
+import BrowseArticles from './pages/BrowseArticles.js';
+import BrowseTags from './pages/BrowseTags.js';
+import Home from './pages/Home.js';
+import DynamicTagPage from './pages/DynamicTagPage';
+import ClassicFallDream from './articles/classic-fall-dream';
 import YouKilledKenny from './articles/you-killed-kenny';
 import DreamArguing from './articles/dream-arguing';
 import PlanetHopping from './articles/planet-hopping';
@@ -27,13 +27,13 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/browse-articles" element={<BrowseArticles />} />
                 <Route path="/browse-tags" element={<BrowseTags />} />
-                <Route path="/classic-fall-dream" element={<Falling />} />
+                <Route path=":id" element={<DynamicTagPage />} />
+                <Route path="/classic-fall-dream" element={<ClassicFallDream />} />
                 <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
                 <Route path="/dream-arguing" element={<DreamArguing />} />
                 <Route path="/planet-hopping" element={<PlanetHopping />} />
                 <Route path="/why-am-i-always-in-school" element={<WhyAmIAlwaysInSchool />} />
                 <Route path="/confusion-illusion" element={<ConfusionIllusion />} />
-                <Route path=":id" element={<EachTagPage />} />
               </Routes>
             </div>
             <Sidebar />

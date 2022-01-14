@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import './BrowseArticles.css';
-import allArticles from './articles/allArticles';
+import allArticles from '../articles/allArticles';
 import { useDispatch } from 'react-redux';
-import { add } from './features/tagsList';
-import { remove } from './features/tagsList';
+import { add } from '../features/tagsList';
+import { remove } from '../features/tagsList';
 
 const BrowseArticles = () => {
 

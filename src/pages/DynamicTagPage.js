@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
-import allArticles from './articles/allArticles';
+import allArticles from '../articles/allArticles';
 import { useParams } from 'react-router-dom';
-import FeaturedBlurb from './FeaturedBlurb';
-import './EachTagPage.css';
+import FeaturedBlurb from '../components/FeaturedBlurb';
+import './DynamicTagPage.css';
 import { useDispatch } from 'react-redux';
-import { add } from './features/tagsList';
-import { remove } from './features/tagsList';
+import { add } from '../features/tagsList';
+import { remove } from '../features/tagsList';
 
-const EachTagPage = () => {
+const DynamicTagPage = () => {
     let params = useParams();
 
     function Randomize(array) {
@@ -73,4 +73,4 @@ const EachTagPage = () => {
     )
     }
 
-export default EachTagPage;
+export default DynamicTagPage;

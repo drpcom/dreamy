@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import './Home.css';
-import FeaturedBlurb from './FeaturedBlurb.js';
+import FeaturedBlurb from '../components/FeaturedBlurb.js';
 import { Link } from 'react-router-dom';
-import allArticles from './articles/allArticles';
+import allArticles from '../articles/allArticles';
 import { useDispatch } from 'react-redux';
-import { add } from './features/tagsList';
-import { remove } from './features/tagsList';
+import { add } from '../features/tagsList';
+import { remove } from '../features/tagsList';
 
 const Home = () => {
     const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']

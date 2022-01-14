@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-import dice from './images/dice.png';
+import dice from '../images/dice.png';
 import SearchBar from './SearchBar.js';
-import allArticles from './articles/allArticles';
-import allTags from './articles/allTags';
+import allArticles from '../articles/allArticles';
+import allTags from '../articles/allTags';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
