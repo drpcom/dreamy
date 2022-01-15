@@ -6,6 +6,7 @@ import './DynamicTagPage.css';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
+import Banner from '../components/Banner';
 
 const DynamicTagPage = () => {
     let params = useParams();
@@ -49,10 +50,14 @@ const DynamicTagPage = () => {
         }
         })
 
+    let randArticles = Randomize(allArticles);
+
     return (
+        <>
+        <Banner name={params.id} link={params.id} />
         <div className="tags-page">
             <h1>"{params.id}"</h1>
-            {allArticles.map((article, i) => {
+            {randArticles.map((article, i) => {
                 if (article.tags.includes(params.id)) {
                     return (
                         <div key={i}>
@@ -70,6 +75,7 @@ const DynamicTagPage = () => {
                 }
             })}
         </div>
+        </>
     )
     }
 

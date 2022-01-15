@@ -27,11 +27,11 @@ const SearchBar = ({allArticles, allTags}) => {
     let data = [];
     allArticles.forEach((article) => {
         data.push(article.route);
-        console.log(data)
+        // console.log(data)
     })
     allTags.forEach((tag) => {
         data.push(tag.id)
-        console.log(data)
+        // console.log(data)
     })
 
     const handleFilter = (e) => {

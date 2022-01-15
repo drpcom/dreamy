@@ -1,0 +1,33 @@
+.banner-container {
+  width: 100%;
+  height: 3rem;
+  background: #125c56;
+  border-radius: 6px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.slashAndLink {
+  color: whitesmoke;
+  margin-right: 0.5rem;
+}
+
+.slashAndLink > a {
+  color: whitesmoke;
+}
+
+.slashAndHome {
+  color: whitesmoke;
+  margin-right: 0.5rem;
+}
+
+.slashAndHome > a {
+  color: whitesmoke;
+  text-decoration: none;
+}

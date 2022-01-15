@@ -8,7 +8,7 @@ import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 
 const Home = () => {
-    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
+    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'pre-human']
     
     const dispatch = useDispatch();
     

@@ -14,14 +14,14 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>
-                    <p>What is Dreamy.io?</p>
-                    <p>Contact Us</p>
-                    <p>Terms of Use</p>
+                    <NavLink to="/about"><p>What is Dreamy.io?</p></NavLink>
+                    <NavLink to="/contact"><p>Contact Us</p></NavLink>
+                    <NavLink to="/terms"><p>Terms of Use</p></NavLink>
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Additional Info</p>
-                    <p>Privacy Policy</p>
-                    <p>Disclaimers</p>
+                    <NavLink to="/privacy-policy"><p>Privacy Policy</p></NavLink>
+                    <NavLink to="/disclaimers"><p>Disclaimers</p></NavLink>
                     <p>Patreon</p>
                 </div>
             </div>

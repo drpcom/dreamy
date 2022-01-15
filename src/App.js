@@ -14,6 +14,11 @@ import DreamArguing from './articles/dream-arguing';
 import PlanetHopping from './articles/planet-hopping';
 import WhyAmIAlwaysInSchool from './articles/why-am-i-always-in-school';
 import ConfusionIllusion from './articles/confusion-illusion';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Terms from './pages/Terms';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Disclaimers from './pages/Disclaimers';
 
 function App() {
 
@@ -25,6 +30,11 @@ function App() {
             <div className="template">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/disclaimers" element={<Disclaimers />} />
                 <Route path="/browse-articles" element={<BrowseArticles />} />
                 <Route path="/browse-tags" element={<BrowseTags />} />
                 <Route path=":id" element={<DynamicTagPage />} />

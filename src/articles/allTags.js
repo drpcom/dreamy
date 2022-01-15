@@ -28,6 +28,20 @@ const allTags = [
     {id: 'woke up mad'}, 
     {id: 'anger'}, 
     {id: 'frustration'},
+    {id: 'self-image'},
+    {id: 'self-esteem'},
+    {id: 'face'},
+    {id: 'body'},
+    {id: 'why'},
+    {id: 'pleasant'},
+    {id: 'bugs'},
+    {id: 'gross'},
+    {id: 'upsetting'},
+    {id: 'running'},
+    {id: 'fighting'},
+    {id: 'trippy'},
+    {id: 'surreal'},
+
 ]
 
 export default allTags;

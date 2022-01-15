@@ -1,10 +1,15 @@
 import imgTwoPlaceholder from '../images/imgTwoPlaceholder.jpg';
-import pineapple from '../images/pineapple.jpg';
-import plainwater from '../images/plainwater.jpg';
 import hopping from '../images/hopping.jpg';
 import school from '../images/school.jpg';
 import confusion from '../images/confusion.jpg';
 import dreamArguing from '../images/dreamArguing.jpg';
+import falling from '../images/falling.jpg';
+import iMetLiamNeeson from '../images/iMetLiamNeeson.jpg';
+import sloMo from '../images/sloMo.jpg';
+import spiders from '../images/spiders.jpg';
+import takingExams from '../images/takingExams.jpg';
+import wowImBald from '../images/wowImBald.jpg';
+import youKilledKenny from '../images/youKilledKenny.jpg';
 
 const allArticles = [
     {
@@ -12,10 +17,10 @@ const allArticles = [
         route: "classic-fall-dream",
         title: 'Classic Fall Dream', 
         triggerWarning: false,
-        imageOne: pineapple,
+        imageOne: falling,
         imageSubheading: "Sure is a long way down...",
         imageTwo: imgTwoPlaceholder,
-        tags: ['exhilarating', 'fear', 'true awakening', 'recurring', 'pre-human', 'phobia', 'death', 'anxiety'],
+        tags: ['falling', 'exhilarating', 'fear', 'true awakening', 'recurring', 'pre-human', 'phobia', 'death', 'anxiety'],
         overview: [
         "Math rock and post-rock in their song structure and guitar work. A few examples of these twinkledaddy bands are Street Smart Cyclist, Snowing, Algernon Cadwallader, The World Is A Beautiful Place & I Am No Longer Afraid to Die, and Glocca Morra.", 
         "As this scene grew and grew in popularity, #emorevival became a near-mainstream style of indie rock which took from various facets of Midwest, screamo, and emo pop, as played by bands such as the Hotelier, Free Throw, and late-period You Blew It! There is even an emo pop revival scene centered around Midwest-influenced indie rock bands with mildly intricate guitar work and deeply personal, confessional lyrics. These bands include Modern Baseball, Sorority Noise, and the Front Bottoms.", 
@@ -30,7 +35,7 @@ const allArticles = [
         route: "you-killed-kenny",
         title: 'You Killed Kenny!', 
         triggerWarning: true,
-        imageOne: plainwater,
+        imageOne: youKilledKenny,
         imageSubheading: "You bastards!",
         imageTwo: imgTwoPlaceholder,
         tags: ['bruh', 'fear', 'true awakening', 'recurring', 'exhilarating', 'death', 'anxiety' ],
@@ -50,7 +55,7 @@ const allArticles = [
         imageOne: hopping,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
-        tags: ['super powers', 'fun', 'lucid', 'fear', 'exhilarating', 'death' ],
+        tags: ['super powers', 'fun', 'lucid', 'fear', 'exhilarating', 'death', 'trippy' ],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
@@ -102,6 +107,91 @@ const allArticles = [
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
         tags: ['woke up mad', 'fear', 'recurring', 'anger', 'frustration', 'anxiety'],
+        overview: [
+            "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
+            "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
+        ],
+        interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        
+    },
+    {
+        id:6, 
+        route: "wow-im-bald",
+        title: `Wow I'm Bald`, 
+        triggerWarning: false,
+        imageOne: wowImBald,
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageTwo: imgTwoPlaceholder,
+        tags: ['self-image', 'self-esteem', 'face', 'anxiety', 'body'],
+        overview: [
+            "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
+            "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
+        ],
+        interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        
+    },
+    {
+        id:7, 
+        route: "i-met-liam-neeson",
+        title: "I Met Liam Neeson", 
+        triggerWarning: false,
+        imageOne: iMetLiamNeeson,
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageTwo: imgTwoPlaceholder,
+        tags: ['why', 'pleasant', 'fun', 'being chased'],
+        overview: [
+            "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
+            "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
+        ],
+        interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        
+    },
+    {
+        id:8, 
+        route: "taking-exams",
+        title: "Taking Exams", 
+        triggerWarning: false,
+        imageOne: takingExams,
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageTwo: imgTwoPlaceholder,
+        tags: ['school', 'anxiety', 'frustration', 'pointless', 'childhood'],
+        overview: [
+            "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
+            "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
+        ],
+        interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        
+    },
+    {
+        id:9, 
+        route: "spiders",
+        title: "Spiders!", 
+        triggerWarning: false,
+        imageOne: spiders,
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageTwo: imgTwoPlaceholder,
+        tags: ['bugs', 'gross', 'upsetting', 'pre-human', 'phobia', 'bruh', 'recurring', 'fear'],
+        overview: [
+            "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
+            "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
+        ],
+        interpretation: "Nunc sed id semper risus in hendrerit. Pulvinar sapien et ligula ullamcorper malesuada proin. Blandit turpis cursus in hac habitasse platea dictumst quisque. Vivamus at augue eget arcu dictum varius duis at consectetur. Libero nunc consequat interdum varius sit amet mattis vulputate. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Ac tortor dignissim convallis aenean et. Aliquet enim tortor at auctor urna nunc id. Dui sapien eget mi proin sed libero enim sed. Cras ornare arcu dui vivamus. Felis bibendum ut tristique et.",
+        relatedArticles: ["Blastoise", "blaziken", "dusklops", "tropius", "metagross", "lugia"]
+        
+    },
+    {
+        id:10, 
+        route: "slo-mo",
+        title: "Slo-Mo", 
+        triggerWarning: false,
+        imageOne: sloMo,
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageTwo: imgTwoPlaceholder,
+        tags: ['running', 'sports', 'frustration', 'fighting', 'trippy', 'surreal', 'exhilarating'],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
