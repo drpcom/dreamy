@@ -18,6 +18,13 @@ const Navbar = () => {
         setClick(false);
     }
 
+    // Logic for the random article button.
+    let routeArray = [];
+        allArticles.forEach((article) => {
+            routeArray.push(article.route);
+        })
+        let random = Math.floor(Math.random() * routeArray.length)
+
     return (
         <>
         <nav className="nav-container">
@@ -36,16 +43,18 @@ const Navbar = () => {
                 <div className="nav-search">
                     <SearchBar allArticles={allArticles} allTags={allTags} />
                 </div>
-                <Link to="/random" className="nav-link"><img src={dice} alt="dice" /></Link>
+                <a href={routeArray[random]} className="nav-link">
+                    <img src={dice} alt="dice" />
+                </a>
                 <div className="nav-menu" onClick={() => handleClick()}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </div>
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
-            <Link to="/browse-articles" className="nav-link__burgered" onClick={() => Close()}>Articles</Link>
-            <Link to="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</Link>
-            <Link to="/random" className="nav-link__burgered" onClick={() => Close()}>Random</Link>
+            <a href="/browse-articles" className="nav-link__burgered" onClick={() => Close()}>Articles</a>
+            <a href="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</a>
+            <a href={routeArray[random]} className="nav-link__burgered" onClick={() => Close()}>Random</a>
         </div>
         </>
     )
