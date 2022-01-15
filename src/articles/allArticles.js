@@ -48,7 +48,7 @@ const allArticles = [
         title: 'Planet Hopping', 
         triggerWarning: false,
         imageOne: hopping,
-        imageSubheading: "You bastards!",
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
         tags: ['super powers', 'fun', 'lucid', 'fear', 'exhilarating', 'death' ],
         overview: [
@@ -65,7 +65,7 @@ const allArticles = [
         title: 'Why am I always in school?', 
         triggerWarning: false,
         imageOne: school,
-        imageSubheading: "You bastards!",
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
         tags: ['childhood', 'recurring', 'anxiety', 'school' ],
         overview: [
@@ -82,7 +82,7 @@ const allArticles = [
         title: 'Confusion Illusion', 
         triggerWarning: false,
         imageOne: confusion,
-        imageSubheading: "",
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
         tags: ['pointless', 'recurring', 'sisyphus', 'boring', 'routine'],
         overview: [
@@ -99,7 +99,7 @@ const allArticles = [
         title: 'Dream Arguing', 
         triggerWarning: false,
         imageOne: dreamArguing,
-        imageSubheading: "Sure is a long way down...",
+        imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
         tags: ['woke up mad', 'fear', 'recurring', 'anger', 'frustration', 'anxiety'],
         overview: [
