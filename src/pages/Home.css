@@ -1,13 +1,14 @@
 /* .home-container {
 } */
 
-.welcome-container {
+.welcome-banner {
   display: flex;
   background: #235c56;
   border-radius: 4px 0 0 0;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+  cursor: pointer;
 }
 
 .welcome-title {

@@ -8,7 +8,7 @@ import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 
 const Home = () => {
-    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'pre-human']
+    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
     
     const dispatch = useDispatch();
     
@@ -23,7 +23,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <div className="welcome-container">
+            <div className="welcome-banner">
                 <div className="welcome-title">
                     <p>dreamy.io</p>
                 </div>

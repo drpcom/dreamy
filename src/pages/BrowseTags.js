@@ -9,7 +9,7 @@ import Banner from '../components/Banner';
 
 const BrowseTags = () => {
 
-    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'pre-human']
+    const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
 
     const dispatch = useDispatch();
 
@@ -20,13 +20,13 @@ const BrowseTags = () => {
         }
         })
 
+    // This chunk of code alphabetizes the array of all tags. 
     let arr = [];
     allTags.forEach((tag) => {
         arr.push(tag.id)
     })
     let alphabetizedTags = arr.sort((a,b) => a.localeCompare(b));
     console.log(alphabetizedTags)
-    // This chunk of code alphabetizes the array of all tags. 
 
     return (
         <>

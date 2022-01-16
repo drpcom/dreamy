@@ -20,6 +20,7 @@
 
 .slashAndLink > a {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .slashAndHome {
@@ -29,5 +30,4 @@
 
 .slashAndHome > a {
   color: whitesmoke;
-  text-decoration: none;
 }

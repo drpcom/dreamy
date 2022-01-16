@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <>
         <Banner name="Contact" link="/contact" />
-        <div>
-            <h1>Form</h1>
+        <div className="boh-container">
+            <h1 className="boh-title">Form</h1>
             <h3>Send email to: </h3>
             <input type="text" placeholder="name" />
             <input type="text" placeholder="email address" />

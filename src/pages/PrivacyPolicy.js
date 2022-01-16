@@ -5,9 +5,9 @@ const PrivacyPolicy = () => {
     return (
         <>
         <Banner name="Privacy Policy" link="/privacy-policy" />
-        <div>
-            <h1>Privacy Policy</h1>
-            <h3>Privacy policy tells how i am using your personal information. this website uses cookies to store emoji clicks on articles. that is all.</h3>
+        <div className="boh-container">
+            <h1 className="boh-title">Privacy Policy</h1>
+            <h3 className="boh-content">Privacy policy tells how i am using your personal information. this website uses cookies to store emoji clicks on articles. that is all.</h3>
         </div>
         </>
     )

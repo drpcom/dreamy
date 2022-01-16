@@ -12,6 +12,12 @@ const BrowseArticles = () => {
 
     const dispatch = useDispatch();
 
+    // Puts article array into alphabetical order.
+    const sortArray = (x,y) => {
+        return x.title.localeCompare(y.title);
+    }
+    allArticles.sort(sortArray);
+
     useEffect(() => {
         dispatch(add({ tags: baseTags}));
         return () => {
@@ -27,10 +33,12 @@ const BrowseArticles = () => {
                 return (
                     <div key={i} className="mini-article-container">
                         <div className="mini-image-container">
-                            <img src={article.imageOne} alt={article.id} />
+                            <a href={article.route}><img src={article.imageOne} alt={article.id} /></a>
                         </div>
-                        <div className="mini-title">
-                            <a href={article.route}>{article.title}</a>
+                        <div className="mini-title-container">
+                            <div className="mini-title">
+                                <a href={article.route}>{article.title}</a>
+                            </div>                       
                         </div>
                         <div className="mini-desc-container">
                             <p className="mini-desc">{article.overview}</p>

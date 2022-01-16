@@ -17,8 +17,6 @@ const allTags = [
     {id: 'pregnancy'},
     {id: 'falling'},
     {id: 'being chased'},
-    {id: 'teeth'},
-    {id: 'naked in public'},
     {id: 'flying'},
     {id: 'cheating'},
     {id: 'sex'},

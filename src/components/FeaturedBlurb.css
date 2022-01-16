@@ -38,6 +38,7 @@
   height: 9rem;
   float: left;
   margin-right: 1rem;
+  object-fit: cover;
 }
 
 .featured-content > p {
