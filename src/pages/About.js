@@ -8,7 +8,8 @@ const About = () => {
         <Banner name="About" link="/about" />
         <div className="boh-container">
             <h1 className="boh-title">What is Dreamy.io?</h1>
-            <h3 className="boh-content">A hustler's paradise. An encyclopedia of dreams. I'm honestly surprised this hasn't been done before. Wait, this has definitely been done. But I'm gonna do it in STYLE. Join me in my journey. ⁕</h3>
+            <h3 className="boh-content">Have you ever woken up in the middle of the night with a strange dream and wondered what it meant? <strong>Well, you've come to the right place.</strong></h3>
+            <h3 className="boh-content">Dreamy.io is an encyclopedia of dreams and their interpretations. Just use the search box and start digging! Alternatively, you can <a href="/browse-articles">browse articles</a> and <a href="browse-tags">tags.</a> ⁕</h3>
         </div>
         </>
     )

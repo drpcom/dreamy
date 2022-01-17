@@ -1,12 +1,22 @@
 .boh-container {
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .boh-title {
   margin-bottom: 1rem;
   font-weight: 100;
+  color: #235c56;
 }
 
 .boh-content {
   font-weight: 100;
+  font-size: 1.5rem;
+  color: darkslategray;
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+.boh-content > a {
+  text-decoration: none;
+  color: #235c56;
 }

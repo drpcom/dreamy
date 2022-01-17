@@ -16,10 +16,9 @@
 .sidebar-content {
   font-size: 1.2rem;
   margin: 1rem;
-  /* list-style-type: "?";
-  text-indent: 0.6rem; */
   display: flex;
   flex-direction: column;
+  text-indent: 0.3rem;
 }
 
 .sidebar-content > a,

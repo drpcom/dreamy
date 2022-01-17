@@ -11,6 +11,8 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 10;
   overflow: hidden;
+  font-family: system-ui;
+  color: #274141;
 }
 
 .featured-heading {

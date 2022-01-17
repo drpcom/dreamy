@@ -1,17 +1,19 @@
 import React from 'react'
 import Banner from '../components/Banner';
+import './Contact.css';
 
 const Contact = () => {
     return (
         <>
         <Banner name="Contact" link="/contact" />
         <div className="boh-container">
-            <h1 className="boh-title">Form</h1>
-            <h3>Send email to: </h3>
-            <input type="text" placeholder="name" />
-            <input type="text" placeholder="email address" />
-            <input type="text" placeholder="message" />
-            <button>submit</button>
+            <h1 className="boh-title">Contact</h1>
+            <form action="https://formsubmit.co/dreamy.contact.spirits@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!"></input>
+                <input type="email" name="email" placeholder="Email Address" required className="contact-email"></input>
+                <textarea name="message" placeholder="Your message here." required className="contact-text"></textarea>
+                <button type="submit" className="contact-send">Send</button>
+            </form>
         </div>
         </>
     )

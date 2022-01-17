@@ -39,7 +39,7 @@ const allArticles = [
         imageOne: youKilledKenny,
         imageSubheading: "You bastards!",
         imageTwo: imgTwoPlaceholder,
-        tags: ['bruh', 'fear', 'true awakening', 'recurring', 'exhilarating', 'death', 'anxiety' ],
+        tags: ['bruh', 'fear', 'true awakening', 'recurring', 'exhilarating', 'death', 'anxiety', 'morbid' ],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
@@ -90,7 +90,7 @@ const allArticles = [
         imageOne: confusion,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
-        tags: ['pointless', 'recurring', 'sisyphus', 'boring', 'routine'],
+        tags: ['pointless', 'recurring', 'sisyphus', 'boring', 'routine', 'slow'],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
@@ -120,7 +120,7 @@ const allArticles = [
         id:6, 
         route: "wow-im-bald",
         title: `Wow I'm Bald`, 
-        triggerWarning: false,
+        triggerWarning: true,
         imageOne: wowImBald,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
@@ -171,7 +171,7 @@ const allArticles = [
         id:9, 
         route: "spiders",
         title: "Spiders!", 
-        triggerWarning: false,
+        triggerWarning: true,
         imageOne: spiders,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
@@ -192,7 +192,7 @@ const allArticles = [
         imageOne: sloMo,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
-        tags: ['running', 'sports', 'frustration', 'fighting', 'trippy', 'surreal', 'exhilarating'],
+        tags: ['slow', 'running', 'sports', 'frustration', 'fighting', 'trippy', 'surreal', 'exhilarating'],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",
@@ -209,7 +209,7 @@ const allArticles = [
         imageOne: succubus,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
         imageTwo: imgTwoPlaceholder,
-        tags: ['sex', 'cheating', 'cheating', 'dying', 'false-awakening', 'foreboding', 'funny', 'morbid', 'ominous', 'pregnancy', 'exhilarating'],
+        tags: ['sex', 'cheating', 'cheating', 'dying', 'true-awakening', 'foreboding', 'funny', 'morbid', 'ominous', 'pregnancy', 'exhilarating'],
         overview: [
             "Tristique senectus et netus et malesuada. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Feugiat nisl pretium fusce id. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus. Sed libero enim sed faucibus turpis. Ligula ullamcorper malesuada proin libero. Nec ultrices dui sapien eget mi proin sed. Id venenatis a condimentum vitae sapien pellentesque. Sed id semper risus in hendrerit gravida rutrum. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Non blandit massa enim nec dui nunc mattis enim.",
             "Purus gravida quis blandit turpis cursus. Convallis convallis tellus id interdum velit laoreet id donec. Morbi quis commodo odio aenean sed adipiscing. Eget arcu dictum varius duis at. Massa sed elementum tempus egestas sed sed risus pretium. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Diam donec adipiscing tristique risus nec feugiat in. Egestas sed tempus urna et pharetra pharetra massa. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc. Tortor posuere ac ut consequat semper viverra nam libero justo. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nunc aliquet bibendum enim facilisis gravida neque.",

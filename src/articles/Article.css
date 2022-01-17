@@ -52,6 +52,7 @@
 .article-title {
   margin: 1rem 2rem 0 2rem;
   border-bottom: 1px solid lightgray;
+  color: #235c56;
 }
 
 .trigger {
@@ -62,6 +63,8 @@
 .article-content {
   margin-left: 2rem;
   margin-right: 2rem;
+  color: #274141;
+  font-family: system-ui;
 }
 
 .article-content__section-one {
@@ -75,7 +78,6 @@
   margin-bottom: 1rem;
   margin-left: 1rem;
   width: 43%;
-  /* outline: 0.4rem solid rgb(128, 128, 128, 0.3); */
   border-radius: 10px 10px 10px 10px;
 }
 

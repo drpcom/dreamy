@@ -1,0 +1,42 @@
+.contact-email,
+.contact-email:focus {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-indent: 0.3rem;
+  outline: none;
+}
+
+.contact-text,
+.contact-text:focus {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  width: 400px;
+  resize: none;
+  text-indent: 0.3rem;
+  height: 200px;
+  outline: none;
+}
+
+.contact-send {
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  border: none;
+  background: #235c56;
+  color: white;
+  font-family: unset;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.contact-send:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 530px) {
+  .contact-text {
+    width: 100%;
+  }
+}

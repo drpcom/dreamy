@@ -19,6 +19,12 @@ import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimers from './pages/Disclaimers';
+import WowImBald from './articles/wow-im-bald';
+import IMetLiamNeeson from './articles/i-met-liam-neeson';
+import SloMo from './articles/slo-mo';
+import Spiders from './articles/spiders';
+import Succubus from './articles/succubus';
+import TakingExams from './articles/taking-exams';
 
 function App() {
 
@@ -44,6 +50,12 @@ function App() {
                 <Route path="/planet-hopping" element={<PlanetHopping />} />
                 <Route path="/why-am-i-always-in-school" element={<WhyAmIAlwaysInSchool />} />
                 <Route path="/confusion-illusion" element={<ConfusionIllusion />} />
+                <Route path="/wow-im-bald" element={<WowImBald />} />
+                <Route path="/i-met-liam-neeson" element={<IMetLiamNeeson />} />
+                <Route path="/slo-mo" element={<SloMo />} />
+                <Route path="/spiders" element={<Spiders />} />
+                <Route path="/succubus" element={<Succubus />} />
+                <Route path="/taking-exams" element={<TakingExams />} />
               </Routes>
             </div>
             <Sidebar />

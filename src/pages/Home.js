@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home-container">
             <div className="welcome-banner">
                 <div className="welcome-title">
-                    <p>dreamy.io</p>
+                    <a href="/about"><p>dreamy.io</p></a>
                 </div>
                 <div className="welcome-subtitle">
                     <p>You up?</p>
@@ -33,14 +33,14 @@ const Home = () => {
             </div>
             <div className="section-one">
                 <FeaturedBlurb 
-                heading="Featured Entry" 
+                heading=":: Featured Entry ::" 
                 title={<Link to={allArticles[0].route}>{allArticles[0].title}</Link>}
                 image={allArticles[0].imageOne}
                 text={allArticles[0].overview}
                 link={allArticles[0].route}
                 />
                 <FeaturedBlurb 
-                heading="Newest Entry" 
+                heading="::Newest Entry ::" 
                 title={<Link to={allArticles[1].route}>{allArticles[1].title}</Link>}
                 image={allArticles[1].imageOne}
                 text={allArticles[1].overview}
@@ -63,7 +63,7 @@ const Home = () => {
             </div>
             <div className="section-three">
                 <FeaturedBlurb 
-                heading="Discover" 
+                heading=":: Discover ::" 
                 title={<Link to={allArticles[3].route}>{allArticles[3].title}</Link>}
                 image={allArticles[3].imageOne}
                 text={allArticles[3].overview}

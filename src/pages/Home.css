@@ -20,6 +20,11 @@
   color: white;
 }
 
+.welcome-title > a {
+  color: white;
+  text-decoration: none;
+}
+
 .welcome-subtitle {
   display: flex;
   font-size: 0.6rem;

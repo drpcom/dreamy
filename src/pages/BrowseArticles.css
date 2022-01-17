@@ -147,4 +147,7 @@ a > img {
 
 .mini-desc {
   margin-top: 8px;
+  font-family: system-ui;
+  color: #274141;
+  line-height: 1rem;
 }

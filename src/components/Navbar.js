@@ -11,7 +11,6 @@ const Navbar = () => {
 
     const handleClick = () => {
         setClick(!click);
-        console.log(click)
     }
 
     const Close = () => {
@@ -52,6 +51,7 @@ const Navbar = () => {
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
+            <a href="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</a>
             <a href="/browse-articles" className="nav-link__burgered" onClick={() => Close()}>Articles</a>
             <a href="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</a>
             <a href={routeArray[random]} className="nav-link__burgered" onClick={() => Close()}>Random</a>
