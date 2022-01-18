@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar.js';
 import Sidebar from './components/Sidebar.js';
 import Footer from './components/Footer.js';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BrowseArticles from './pages/BrowseArticles.js';
 import BrowseTags from './pages/BrowseTags.js';
 import Home from './pages/Home.js';
@@ -30,38 +30,38 @@ function App() {
 
   return (
     <Router>
-        <Navbar />
-        <div className="main-container">
-          <div className="main-content">
-            <div className="template">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/disclaimers" element={<Disclaimers />} />
-                <Route path="/browse-articles" element={<BrowseArticles />} />
-                <Route path="/browse-tags" element={<BrowseTags />} />
-                <Route path=":id" element={<DynamicTagPage />} />
-                <Route path="/classic-fall-dream" element={<ClassicFallDream />} />
-                <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
-                <Route path="/dream-arguing" element={<DreamArguing />} />
-                <Route path="/planet-hopping" element={<PlanetHopping />} />
-                <Route path="/why-am-i-always-in-school" element={<WhyAmIAlwaysInSchool />} />
-                <Route path="/confusion-illusion" element={<ConfusionIllusion />} />
-                <Route path="/wow-im-bald" element={<WowImBald />} />
-                <Route path="/i-met-liam-neeson" element={<IMetLiamNeeson />} />
-                <Route path="/slo-mo" element={<SloMo />} />
-                <Route path="/spiders" element={<Spiders />} />
-                <Route path="/succubus" element={<Succubus />} />
-                <Route path="/taking-exams" element={<TakingExams />} />
-              </Routes>
-            </div>
-            <Sidebar />
+      <Navbar />
+      <div className="main-container">
+        <div className="main-content">
+          <div className="template">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/disclaimers" element={<Disclaimers />} />
+              <Route path="/browse-articles" element={<BrowseArticles />} />
+              <Route path="/browse-tags" element={<BrowseTags />} />
+              <Route path=":id" element={<DynamicTagPage />} />
+              <Route path="/classic-fall-dream" element={<ClassicFallDream />} />
+              <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
+              <Route path="/dream-arguing" element={<DreamArguing />} />
+              <Route path="/planet-hopping" element={<PlanetHopping />} />
+              <Route path="/why-am-i-always-in-school" element={<WhyAmIAlwaysInSchool />} />
+              <Route path="/confusion-illusion" element={<ConfusionIllusion />} />
+              <Route path="/wow-im-bald" element={<WowImBald />} />
+              <Route path="/i-met-liam-neeson" element={<IMetLiamNeeson />} />
+              <Route path="/slo-mo" element={<SloMo />} />
+              <Route path="/spiders" element={<Spiders />} />
+              <Route path="/succubus" element={<Succubus />} />
+              <Route path="/taking-exams" element={<TakingExams />} />
+            </Routes>
           </div>
+          <Sidebar />
         </div>
-        <Footer />
+      </div>
+      <Footer />
     </Router>
   );
 }
