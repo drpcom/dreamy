@@ -9,7 +9,7 @@ const SearchBar = ({allArticles, allTags}) => {
         let domNode = useRef()
         useEffect(() => {
             let maybeHandler = (e) => {
-            if (!domNode.current.contains(e.target)) {
+            if (domNode.current && !domNode.current.contains(e.target)) {
                 handler();
             }
             };
@@ -19,7 +19,7 @@ const SearchBar = ({allArticles, allTags}) => {
             return () => {
                 document.removeEventListener("mousedown", maybeHandler)
             }
-        });
+        },[handler]);
 
         return domNode;
     }
