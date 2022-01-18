@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
-  cursor: pointer;
 }
 
 .welcome-title {
@@ -18,6 +17,7 @@
   font-weight: 100;
   margin-top: 5rem;
   color: white;
+  cursor: pointer;
 }
 
 .welcome-title > a {
@@ -52,6 +52,7 @@
 
 .latest-container {
   margin: 2rem;
+  text-indent: 0.3rem;
 }
 
 .latest-heading {
