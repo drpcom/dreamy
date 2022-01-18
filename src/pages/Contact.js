@@ -8,7 +8,7 @@ const Contact = () => {
         <Banner name="Contact" link="/contact" />
         <div className="boh-container">
             <h1 className="boh-title">Contact</h1>
-            <form action="https://formsubmit.co/dreamy.contact.spirits@gmail.com" method="POST">
+            <form action="https://formsubmit.co/9d70438d86c0a72bcdc3641c48d05f35" method="POST">
                 <input type="hidden" name="_subject" value="New submission!"></input>
                 <input type="email" name="email" placeholder="Email Address" required className="contact-email"></input>
                 <textarea name="message" placeholder="Your message here." required className="contact-text"></textarea>
