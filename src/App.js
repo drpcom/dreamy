@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar.js';
 import Sidebar from './components/Sidebar.js';
 import Footer from './components/Footer.js';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import BrowseArticles from './pages/BrowseArticles.js';
 import BrowseTags from './pages/BrowseTags.js';
 import Home from './pages/Home.js';
@@ -28,8 +28,17 @@ import TakingExams from './articles/taking-exams';
 
 function App() {
 
+  const Wrapper = ({children}) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children
+  } 
+
   return (
     <Router>
+    <Wrapper>
       <Navbar />
       <div className="main-container">
         <div className="main-content">
@@ -62,6 +71,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      </Wrapper>
     </Router>
   );
 }
