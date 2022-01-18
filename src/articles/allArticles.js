@@ -15,8 +15,8 @@ import succubus from '../images/succubus.jpg';
 const allArticles = [
     {
         id:0, 
-        route: "classic-fall-dream",
-        title: 'Classic Fall Dream', 
+        route: "freefallin",
+        title: `Free Fallin'`, 
         triggerWarning: false,
         imageOne: falling,
         imageSubheading: "Sure is a long way down...",

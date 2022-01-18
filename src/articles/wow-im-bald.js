@@ -16,7 +16,7 @@ const WowImBald = () => {
     }, [])
 
     const getAllLikes = () => {
-        db.collection('dream-arguing').onSnapshot(function (querySnapshot) {
+        db.collection('wow-im-bald').onSnapshot(function (querySnapshot) {
             const data= [];
             querySnapshot.forEach( doc => {
               data.push(doc.data().addedLikes)
@@ -30,56 +30,56 @@ const WowImBald = () => {
     const incrementFlame = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("flame").update({
+        db.collection("wow-im-bald").doc("flame").update({
             addedLikes: increment,
         })
     }
     const incrementLove = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("love").update({
+        db.collection("wow-im-bald").doc("love").update({
             addedLikes: increment,
         })
     }
     const incrementSexy = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("sexy").update({
+        db.collection("wow-im-bald").doc("sexy").update({
             addedLikes: increment,
         })
     }
     const incrementNeutral = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("neutral").update({
+        db.collection("wow-im-bald").doc("neutral").update({
             addedLikes: increment,
         })
     }
     const incrementFunny = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("funny").update({
+        db.collection("wow-im-bald").doc("funny").update({
             addedLikes: increment,
         })
     }
     const incrementScary = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("scary").update({
+        db.collection("wow-im-bald").doc("scary").update({
             addedLikes: increment,
         })
     }
     const incrementMindblowing = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("mindblowing").update({
+        db.collection("wow-im-bald").doc("mindblowing").update({
             addedLikes: increment,
         })
     }
     const incrementSad = () => {
         setDisable(true);
 
-        db.collection("dream-arguing").doc("sad").update({
+        db.collection("wow-im-bald").doc("sad").update({
             addedLikes: increment,
         })
     }

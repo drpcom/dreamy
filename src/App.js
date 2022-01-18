@@ -8,7 +8,7 @@ import BrowseArticles from './pages/BrowseArticles.js';
 import BrowseTags from './pages/BrowseTags.js';
 import Home from './pages/Home.js';
 import DynamicTagPage from './pages/DynamicTagPage';
-import ClassicFallDream from './articles/classic-fall-dream';
+import Freefallin from './articles/freefallin';
 import YouKilledKenny from './articles/you-killed-kenny';
 import DreamArguing from './articles/dream-arguing';
 import PlanetHopping from './articles/planet-hopping';
@@ -53,7 +53,7 @@ function App() {
               <Route path="/browse-articles" element={<BrowseArticles />} />
               <Route path="/browse-tags" element={<BrowseTags />} />
               <Route path=":id" element={<DynamicTagPage />} />
-              <Route path="/classic-fall-dream" element={<ClassicFallDream />} />
+              <Route path="/freefallin" element={<Freefallin />} />
               <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
               <Route path="/dream-arguing" element={<DreamArguing />} />
               <Route path="/planet-hopping" element={<PlanetHopping />} />

@@ -6,7 +6,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import allArticles from './allArticles.js';
 
-const ClassicFallDream = () => {
+const Freefallin = () => {
 
     const [data, setData] = useState([]);
     const [disable, setDisable] = useState(false);
@@ -138,4 +138,4 @@ const ClassicFallDream = () => {
     )
 }
 
-export default ClassicFallDream;
+export default Freefallin;
