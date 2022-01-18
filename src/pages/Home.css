@@ -37,6 +37,10 @@
   .welcome-subtitle {
     margin-left: 0;
   }
+
+  .welcome-title > a {
+    font-size: 3rem;
+  }
 }
 
 .section-one {
