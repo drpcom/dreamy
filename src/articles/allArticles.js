@@ -20,6 +20,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: falling,
         imageSubheading: "Sure is a long way down...",
+        imageCredit: "Nora Hutton",
         imageTwo: imgTwoPlaceholder,
         tags: ['falling', 'exhilarating', 'fear', 'true awakening', 'recurring', 'flying', 'pre-human', 'phobia', 'death', 'anxiety'],
         overview: [
@@ -38,6 +39,7 @@ const allArticles = [
         triggerWarning: true,
         imageOne: youKilledKenny,
         imageSubheading: "You bastards!",
+        imageCredit: "Joel Muniz",
         imageTwo: imgTwoPlaceholder,
         tags: ['bruh', 'fear', 'true awakening', 'recurring', 'exhilarating', 'death', 'anxiety', 'morbid' ],
         overview: [
@@ -55,6 +57,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: hopping,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "William Rouse",
         imageTwo: imgTwoPlaceholder,
         tags: ['super powers', 'fun', 'lucid', 'fear', 'exhilarating', 'death', 'trippy' ],
         overview: [
@@ -72,6 +75,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: school,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Ruben Rodriguez",
         imageTwo: imgTwoPlaceholder,
         tags: ['childhood', 'recurring', 'anxiety', 'school' ],
         overview: [
@@ -89,6 +93,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: confusion,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Emily Morter",
         imageTwo: imgTwoPlaceholder,
         tags: ['pointless', 'recurring', 'sisyphus', 'boring', 'routine', 'slow'],
         overview: [
@@ -106,6 +111,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: dreamArguing,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Obie Fernandez",
         imageTwo: imgTwoPlaceholder,
         tags: ['woke up mad', 'fear', 'recurring', 'anger', 'frustration', 'anxiety'],
         overview: [
@@ -123,6 +129,7 @@ const allArticles = [
         triggerWarning: true,
         imageOne: wowImBald,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Towfiqu barbhuiya",
         imageTwo: imgTwoPlaceholder,
         tags: ['self-image', 'self-esteem', 'face', 'anxiety', 'body'],
         overview: [
@@ -140,6 +147,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: iMetLiamNeeson,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Philippe AWOUTERS",
         imageTwo: imgTwoPlaceholder,
         tags: ['why', 'pleasant', 'fun', 'being chased'],
         overview: [
@@ -157,6 +165,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: takingExams,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Joshua Hoehne",
         imageTwo: imgTwoPlaceholder,
         tags: ['school', 'anxiety', 'frustration', 'pointless', 'childhood'],
         overview: [
@@ -174,6 +183,7 @@ const allArticles = [
         triggerWarning: true,
         imageOne: spiders,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Julian Schultz",
         imageTwo: imgTwoPlaceholder,
         tags: ['bugs', 'gross', 'upsetting', 'pre-human', 'phobia', 'bruh', 'recurring', 'fear'],
         overview: [
@@ -191,6 +201,7 @@ const allArticles = [
         triggerWarning: false,
         imageOne: sloMo,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Ahmad Odeh",
         imageTwo: imgTwoPlaceholder,
         tags: ['slow', 'running', 'sports', 'frustration', 'fighting', 'trippy', 'surreal', 'exhilarating'],
         overview: [
@@ -208,6 +219,7 @@ const allArticles = [
         triggerWarning: true,
         imageOne: succubus,
         imageSubheading: "Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Elementum nibh tellus molestie nunc",
+        imageCredit: "Dalton Smith",
         imageTwo: imgTwoPlaceholder,
         tags: ['sex', 'cheating', 'cheating', 'dying', 'true-awakening', 'foreboding', 'funny', 'morbid', 'ominous', 'pregnancy', 'exhilarating'],
         overview: [

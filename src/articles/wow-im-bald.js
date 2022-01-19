@@ -129,6 +129,7 @@ const WowImBald = () => {
                 triggerWarning={allArticles[6].triggerWarning}
                 image={allArticles[6].imageOne}
                 imageSubheading={allArticles[6].imageSubheading}
+                imageCredit={allArticles[6].imageCredit}
                 imageTwo={allArticles[6].imageTwo}
                 tags={allArticles[6].tags}
                 overview={allArticles[6].overview.join("\n\n")}

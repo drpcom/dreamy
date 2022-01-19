@@ -129,6 +129,7 @@ const Spiders = () => {
                 triggerWarning={allArticles[9].triggerWarning}
                 image={allArticles[9].imageOne}
                 imageSubheading={allArticles[9].imageSubheading}
+                imageCredit={allArticles[9].imageCredit}
                 imageTwo={allArticles[9].imageTwo}
                 tags={allArticles[9].tags}
                 overview={allArticles[9].overview.join("\n\n")}

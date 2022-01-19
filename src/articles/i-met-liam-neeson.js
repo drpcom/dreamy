@@ -129,6 +129,7 @@ const IMetLiamNeeson = () => {
                 triggerWarning={allArticles[7].triggerWarning}
                 image={allArticles[7].imageOne}
                 imageSubheading={allArticles[7].imageSubheading}
+                imageCredit={allArticles[7].imageCredit}
                 imageTwo={allArticles[7].imageTwo}
                 tags={allArticles[7].tags}
                 overview={allArticles[7].overview.join("\n\n")}

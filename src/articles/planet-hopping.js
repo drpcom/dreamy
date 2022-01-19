@@ -129,6 +129,7 @@ const PlanetHopping = () => {
                 triggerWarning={allArticles[2].triggerWarning}
                 image={allArticles[2].imageOne}
                 imageSubheading={allArticles[2].imageSubheading}
+                imageCredit={allArticles[2].imageCredit}
                 imageTwo={allArticles[2].imageTwo}
                 tags={allArticles[2].tags}
                 overview={allArticles[2].overview.join("\n\n")}

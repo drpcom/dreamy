@@ -129,6 +129,7 @@ const Succubus = () => {
                 triggerWarning={allArticles[11].triggerWarning}
                 image={allArticles[11].imageOne}
                 imageSubheading={allArticles[11].imageSubheading}
+                imageCredit={allArticles[11].imageCredit}
                 imageTwo={allArticles[11].imageTwo}
                 tags={allArticles[11].tags}
                 overview={allArticles[11].overview.join("\n\n")}

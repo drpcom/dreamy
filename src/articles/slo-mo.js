@@ -129,6 +129,7 @@ const SloMo = () => {
                 triggerWarning={allArticles[10].triggerWarning}
                 image={allArticles[10].imageOne}
                 imageSubheading={allArticles[10].imageSubheading}
+                imageCredit={allArticles[10].imageCredit}
                 imageTwo={allArticles[10].imageTwo}
                 tags={allArticles[10].tags}
                 overview={allArticles[10].overview.join("\n\n")}

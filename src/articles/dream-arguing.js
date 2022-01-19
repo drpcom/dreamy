@@ -129,6 +129,7 @@ const DreamArguing = () => {
                 triggerWarning={allArticles[5].triggerWarning}
                 image={allArticles[5].imageOne}
                 imageSubheading={allArticles[5].imageSubheading}
+                imageCredit={allArticles[5].imageCredit}
                 imageTwo={allArticles[5].imageTwo}
                 tags={allArticles[5].tags}
                 overview={allArticles[5].overview.join("\n\n")}

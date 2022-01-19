@@ -129,6 +129,7 @@ const ConfusionIllusion = () => {
                 triggerWarning={allArticles[4].triggerWarning}
                 image={allArticles[4].imageOne}
                 imageSubheading={allArticles[4].imageSubheading}
+                imageCredit={allArticles[4].imageCredit}
                 imageTwo={allArticles[4].imageTwo}
                 tags={allArticles[4].tags}
                 overview={allArticles[4].overview.join("\n\n")}

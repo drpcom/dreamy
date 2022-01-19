@@ -128,6 +128,7 @@ const Freefallin = () => {
                 triggerWarning={allArticles[0].triggerWarning}
                 image={allArticles[0].imageOne}
                 imageSubheading={allArticles[0].imageSubheading}
+                imageCredit={allArticles[0].imageCredit}
                 imageTwo={allArticles[0].imageTwo}
                 tags={allArticles[0].tags}
                 overview={allArticles[0].overview.join("\n\n")}

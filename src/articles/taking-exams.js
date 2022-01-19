@@ -129,6 +129,7 @@ const TakingExams = () => {
                 triggerWarning={allArticles[8].triggerWarning}
                 image={allArticles[8].imageOne}
                 imageSubheading={allArticles[8].imageSubheading}
+                imageCredit={allArticles[8].imageCredit}
                 imageTwo={allArticles[8].imageTwo}
                 tags={allArticles[8].tags}
                 overview={allArticles[8].overview.join("\n\n")}

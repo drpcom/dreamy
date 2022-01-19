@@ -88,13 +88,30 @@
   object-fit: cover;
 }
 
-.image-subheading-container {
+.image-subheading-container-one {
   display: flex;
   align-self: center;
   font-size: 0.8rem;
   background: rgb(128, 128, 128, 0.3);
+  padding: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.image-subheading-container-two {
+  display: flex;
+  align-self: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 0.3rem;
+  justify-content: flex-end;
+  background: rgb(128, 128, 128, 0.3);
   border-radius: 0 0 10px 10px;
   padding: 0.6rem;
+}
+
+.image-subheading-container-two > p > a {
+  text-decoration: none;
+  color: #235c56;
 }
 
 .article-content__section-one > p {

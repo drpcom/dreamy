@@ -129,6 +129,7 @@ const WhyAmIAlwaysInSchool = () => {
                 triggerWarning={allArticles[3].triggerWarning}
                 image={allArticles[3].imageOne}
                 imageSubheading={allArticles[3].imageSubheading}
+                imageCredit={allArticles[3].imageCredit}
                 imageTwo={allArticles[3].imageTwo}
                 tags={allArticles[3].tags}
                 overview={allArticles[3].overview.join("\n\n")}

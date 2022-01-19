@@ -129,6 +129,7 @@ const YouKilledKenny = () => {
                 triggerWarning={allArticles[1].triggerWarning}
                 image={allArticles[1].imageOne}
                 imageSubheading={allArticles[1].imageSubheading}
+                imageCredit={allArticles[1].imageCredit}
                 imageTwo={allArticles[1].imageTwo}
                 tags={allArticles[1].tags}
                 overview={allArticles[1].overview}

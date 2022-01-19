@@ -5,7 +5,7 @@ import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 import allArticles from './allArticles';
 
-const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags, overview, interpretation, relatedArticles}) => {
+const Article = ({title, triggerWarning, image, imageSubheading, imageCredit, imageTwo, tags, overview, interpretation, relatedArticles}) => {
 
     const dispatch = useDispatch();
 
@@ -29,8 +29,11 @@ const Article = ({title, triggerWarning, image, imageSubheading, imageTwo, tags,
                 <div className="article-content__section-one">
                     <div className="section-one__image">
                         <img src={image} alt={image} />
-                        <div className="image-subheading-container">
+                        <div className="image-subheading-container-one">
                             <p>{imageSubheading}</p>
+                        </div>
+                        <div className="image-subheading-container-two">
+                            <p>Credit: {imageCredit} <a href="http://Unsplash.com">Unsplash</a></p>
                         </div>
                     </div>
 
