@@ -13,6 +13,7 @@
   overflow: hidden;
   font-family: system-ui;
   color: #274141;
+  min-width: 248px;
 }
 
 .featured-heading {
