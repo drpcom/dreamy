@@ -6,6 +6,7 @@ import Footer from './components/Footer.js';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import BrowseArticles from './pages/BrowseArticles.js';
 import BrowseTags from './pages/BrowseTags.js';
+import Create from './pages/Create.js';
 import Home from './pages/Home.js';
 import DynamicTagPage from './pages/DynamicTagPage';
 import Freefallin from './articles/freefallin';
@@ -52,6 +53,7 @@ function App() {
               <Route path="/disclaimers" element={<Disclaimers />} />
               <Route path="/browse-articles" element={<BrowseArticles />} />
               <Route path="/browse-tags" element={<BrowseTags />} />
+              <Route path="/create" element={<Create />} />
               <Route path=":id" element={<DynamicTagPage />} />
               <Route path="/freefallin" element={<Freefallin />} />
               <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
