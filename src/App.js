@@ -54,7 +54,7 @@ function App() {
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/disclaimers" element={<Disclaimers />} />
-              <Route path="/browse-articles" element={<BrowseArticles />} />
+              <Route path="/articles" element={<BrowseArticles />} />
               <Route path="/browse-tags" element={<BrowseTags />} />
               <Route path="/create" element={<Create />} />
               <Route path="/new-article" element={<NewArticle />} />
@@ -72,7 +72,7 @@ function App() {
               <Route path="/succubus" element={<Succubus />} />
               <Route path="/taking-exams" element={<TakingExams />} />
               <Route path="/article-home" element={<ArticleHome />} />
-              <Route path="/article/:id" element={<DynamicArticle />} />
+              <Route path="/articles/:id" element={<DynamicArticle />} />
             </Routes>
           </div>
           <Sidebar />

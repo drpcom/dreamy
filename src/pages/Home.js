@@ -43,17 +43,17 @@ const Home = () => {
             <div className="section-one">
                 <FeaturedBlurb 
                 heading=":: Featured Entry ::" 
-                title={<Link to={`/article/${fetch.allArticles[0].route}`}>{fetch.allArticles[0].title}</Link>}
+                title={<Link to={`/articles/${fetch.allArticles[0].route}`}>{fetch.allArticles[0].title}</Link>}
                 image={fetch.allArticles[0].image}
                 text={fetch.allArticles[0].overview}
-                link={`/article/${fetch.allArticles[0].route}`}
+                link={`/articles/${fetch.allArticles[0].route}`}
                 />
                 <FeaturedBlurb 
                 heading="::Newest Entry ::" 
-                title={<Link to={`/article/${fetch.allArticles[1].route}`}>{fetch.allArticles[1].title}</Link>}
+                title={<Link to={`/articles/${fetch.allArticles[1].route}`}>{fetch.allArticles[1].title}</Link>}
                 image={fetch.allArticles[1].image}
                 text={fetch.allArticles[1].overview}
-                link={`/article/${fetch.allArticles[1].route}`}
+                link={`/articles/${fetch.allArticles[1].route}`}
                 />
             </div>
             <div className="section-two">
@@ -64,7 +64,7 @@ const Home = () => {
                     {lastFive.map((item, i) => {
                         return (
                             <div key={i} className="latest-content">
-                                <Link to={`/article/${item.route}`}>{item.title}</Link>
+                                <Link to={`/articles/${item.route}`}>{item.title}</Link>
                             </div>
                         )
                     })}
@@ -73,10 +73,10 @@ const Home = () => {
             <div className="section-three">
                 <FeaturedBlurb 
                 heading=":: Discover ::" 
-                title={<Link to={`/article/${fetch.allArticles[3].route}`}>{fetch.allArticles[3].title}</Link>}
-                image={fetch.allArticles[3].image}
-                text={fetch.allArticles[3].overview}
-                link={`/article/${fetch.allArticles[3].route}`}
+                title={<Link to={`/articles/${fetch.allArticles[2].route}`}>{fetch.allArticles[2].title}</Link>}
+                image={fetch.allArticles[2].image}
+                text={fetch.allArticles[2].overview}
+                link={`/articles/${fetch.allArticles[2].route}`}
                 />
             </div>
         </div>

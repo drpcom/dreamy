@@ -1,48 +1,35 @@
-import React, {useState} from 'react';
-import { db } from '../backend/firebase_config';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-import { useEffect } from 'react';
+import React from 'react';
+import { useArticleFetch } from '../components/ArticleFetch';
+import FeaturedBlurb from '../components/FeaturedBlurb';
 import Card from './Card';
+import {Link} from 'react-router-dom';
 
 const NewArticle = () => {
-    const [loading, setLoading] = useState(true);
-    const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-        const getArticlesFromFirebase = [];
-        const subscriber = db
-        .collection('Articles')
-        .onSnapshot((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                getArticlesFromFirebase.push({
-                    ...doc.data(),
-                    key: doc.id,
-                })
-            })
-            setArticles(getArticlesFromFirebase);
-            setLoading(false);
-        })
-        return () => subscriber()
-
-    },[]);
-
-    if (loading) {
-        return <h1>Loading data...</h1>
-    }
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
   return (
       <div className="container">
       <h1>articles:</h1>
-      {articles.length > 0 ? (
-          articles.map((article) => {
+      {fetch.allArticles.length > 0 ? (
+          fetch.allArticles.map((article) => {
               return (
+                  <>
                   <Card 
                   key={article.id}
                   title={article.title}
                   desc={article.overview}
                   link={`/article/${article.route}`}
                   />
+                  <FeaturedBlurb 
+                    title={<Link to={article.route}>{article.title}</Link>}
+                    image={article.image}
+                    text={article.overview}
+                    link={`/article/${fetch.allArticles[3].route}`}
+                  />
+                  </>
               )
           })
       ) : (
