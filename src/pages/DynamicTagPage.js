@@ -67,10 +67,10 @@ const DynamicTagPage = () => {
                         <div key={i}>
                             <FeaturedBlurb 
                             heading={null}
-                            title={<a href={article.route}>{article.title}</a>}
+                            title={<a href={`/article/${article.route}`}>{article.title}</a>}
                             image={article.image}
                             text={article.overview}
-                            link={article.route}
+                            link={`/article/${article.route}`}
                             />
                         </div>
                     )
