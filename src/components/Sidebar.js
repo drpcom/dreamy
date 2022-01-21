@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const Sidebar = () => {
 
     const tagsList = useSelector(state => state.tagsList.value)
-    // console.log(tagsList.tags)
+    console.log(tagsList.tags)
 
     return (
         <div className="sidebar-container">

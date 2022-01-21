@@ -1,48 +1,24 @@
-import React, {useEffect, useState} from 'react';
-import { db } from '../backend/firebase_config';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import imgTwoPlaceholder from '../images/imgTwoPlaceholder1.jpg';
+import { useArticleFetch } from '../components/ArticleFetch';
 
 const DynamicArticle = () => {
-    const [allArticles, setAllArticles] = useState([]);
-
+    
     let params = useParams();
 
-        useEffect(() => {
-            
-            const fetchAll = async () => {
-                try {
-                    const ref = db.collection("Articles");
-                    const docs = await ref.get();
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
-                    let articleArr = [];
-                    docs.forEach((doc) => {
-                        const data = doc.data();
-                            articleArr.push(data)
-                    })
-                    setAllArticles(articleArr);
-                    
-                } catch (error) {
-                    console.log("Unable to grab articles :(")
-                }
-            }
-            
-            fetchAll();
-            
-        },[])
-
-        console.log(allArticles)
-
-        const myArticle = [];
-        allArticles.forEach((article) => {
-            if (article.route === params.id) {
-                myArticle.push(article)
-            }
-        })
-
-        console.log("my article is: ", myArticle)
+    // Finds single relevant article.
+    const myArticle = [];
+    fetch.allArticles.forEach((article) => {
+        if (article.route === params.id) {
+            myArticle.push(article)
+        }
+    })
+    console.log("my article is: ", myArticle)
 
   return (
       <>
