@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './Navbar.css';
 import dice from '../images/dice.png';
 import SearchBar from './SearchBar.js';
-import allArticles from '../articles/allArticles';
+import { useArticleFetch } from './ArticleFetch';
 import allTags from '../articles/allTags';
 
 const Navbar = () => {
@@ -16,11 +16,16 @@ const Navbar = () => {
     const Close = () => {
         setClick(false);
     }
+    
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
     // Logic for the random article button.
     let routeArray = [];
-        allArticles.forEach((article) => {
-            routeArray.push(article.route);
+        fetch.allArticles.forEach((article) => {
+            const wholeRoute = "/articles/" + article.route
+            routeArray.push(wholeRoute);
         })
         let random = Math.floor(Math.random() * routeArray.length)
 
@@ -42,7 +47,7 @@ const Navbar = () => {
             </div>
             <div className="nav-right">
                 <div className="nav-search">
-                    <SearchBar allArticles={allArticles} allTags={allTags} />
+                    <SearchBar allArticles={fetch.allArticles} allTags={allTags} />
                 </div>
                 <a href={routeArray[random]} className="nav-link">
                     <img src={dice} alt="dice" />
