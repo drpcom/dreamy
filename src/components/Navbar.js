@@ -4,7 +4,7 @@ import './Navbar.css';
 import dice from '../images/dice.png';
 import SearchBar from './SearchBar.js';
 import { useArticleFetch } from './ArticleFetch';
-import allTags from '../articles/allTags';
+import allTags from './allTags';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);

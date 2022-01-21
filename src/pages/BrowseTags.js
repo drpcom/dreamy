@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import allTags from '../articles/allTags';
+import allTags from '../components/allTags';
 import './BrowseTags.css';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
