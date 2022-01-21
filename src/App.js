@@ -9,23 +9,11 @@ import BrowseTags from './pages/BrowseTags.js';
 import Create from './pages/Create.js';
 import Home from './pages/Home.js';
 import DynamicTagPage from './pages/DynamicTagPage';
-import Freefallin from './articles/freefallin';
-import YouKilledKenny from './articles/you-killed-kenny';
-import DreamArguing from './articles/dream-arguing';
-import PlanetHopping from './articles/planet-hopping';
-import WhyAmIAlwaysInSchool from './articles/why-am-i-always-in-school';
-import ConfusionIllusion from './articles/confusion-illusion';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimers from './pages/Disclaimers';
-import WowImBald from './articles/wow-im-bald';
-import IMetLiamNeeson from './articles/i-met-liam-neeson';
-import SloMo from './articles/slo-mo';
-import Spiders from './articles/spiders';
-import Succubus from './articles/succubus';
-import TakingExams from './articles/taking-exams';
 import DynamicArticle from './pages/DynamicArticle';
 
 function App() {
@@ -56,18 +44,6 @@ function App() {
               <Route path="/browse-tags" element={<BrowseTags />} />
               <Route path="/create" element={<Create />} />
               <Route path=":id" element={<DynamicTagPage />} />
-              <Route path="/freefallin" element={<Freefallin />} />
-              <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
-              <Route path="/dream-arguing" element={<DreamArguing />} />
-              <Route path="/planet-hopping" element={<PlanetHopping />} />
-              <Route path="/why-am-i-always-in-school" element={<WhyAmIAlwaysInSchool />} />
-              <Route path="/confusion-illusion" element={<ConfusionIllusion />} />
-              <Route path="/wow-im-bald" element={<WowImBald />} />
-              <Route path="/i-met-liam-neeson" element={<IMetLiamNeeson />} />
-              <Route path="/slo-mo" element={<SloMo />} />
-              <Route path="/spiders" element={<Spiders />} />
-              <Route path="/succubus" element={<Succubus />} />
-              <Route path="/taking-exams" element={<TakingExams />} />
               <Route path="/articles/:id" element={<DynamicArticle />} />
             </Routes>
           </div>

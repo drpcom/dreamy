@@ -5,6 +5,7 @@ import { useArticleFetch } from '../components/ArticleFetch';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
+import './DynamicArticle.css';
 
 const DynamicArticle = () => {
     
