@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import imgTwoPlaceholder from '../images/imgTwoPlaceholder1.jpg';
 import { useArticleFetch } from '../components/ArticleFetch';
+import { useDispatch } from 'react-redux';
+import { add } from '../features/tagsList';
+import { remove } from '../features/tagsList';
 
 const DynamicArticle = () => {
     
@@ -19,6 +22,17 @@ const DynamicArticle = () => {
         }
     })
     console.log("my article is: ", myArticle)
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+            if (myArticle.length > 0) {
+                dispatch(add({ tags: myArticle[0].tags}));
+                return () => {
+                    dispatch(remove());
+                }
+            }
+        }, [dispatch, myArticle])
 
   return (
       <>

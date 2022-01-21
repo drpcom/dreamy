@@ -46,7 +46,7 @@ const NewArticle = () => {
               )
           })
       ) : (
-          <h1>No articles yet</h1>
+          <h1>Error fetching the articles :(</h1>
         )}
 
       </div>

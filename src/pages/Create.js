@@ -30,7 +30,7 @@ const Create = () => {
             credit: newArticle.credit,
             overview: newArticle.overview,
             interpretation: newArticle.interpretation,
-            tags: newArticle.tags,
+            tags: newArticle.tags.split(','),
         })
     }
 
