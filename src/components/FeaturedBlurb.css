@@ -57,3 +57,12 @@
 .featured-more:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 400px) {
+  .featured-container {
+    height: 100%;
+  }
+}
+
+/* @supports (-webkit-overflow-scrolling: touch) {}
+  /* CSS specific to iOS devices */
