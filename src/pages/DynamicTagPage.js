@@ -54,6 +54,7 @@ const DynamicTagPage = () => {
         }
         })
 
+    // Show relevant articles in random order.
     let randArticles = Randomize(fetch.allArticles);
 
     return (

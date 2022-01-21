@@ -34,6 +34,9 @@ const DynamicArticle = () => {
             }
         }, [dispatch, myArticle])
 
+    // Grab the last five articles in the big array.
+    const lastFive = fetch.allArticles.slice(-5);
+
   return (
       <>
         {myArticle.length > 0 && 
@@ -61,6 +64,20 @@ const DynamicArticle = () => {
                     <img src={imgTwoPlaceholder} alt={imgTwoPlaceholder} />
                     <p>{myArticle[0].interpretation}</p>
                 </div>
+                <div className="article-content__section-three">
+                <div className="latest-container">
+                    <div className="latest-heading">
+                        <p>Latest Articles</p>
+                    </div>
+                    {lastFive.map((item, i) => {
+                        return (
+                            <div key={i} className="latest-content">
+                                <a href={item.route}>{item.title}</a>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
             </div>
             </div>
         }
