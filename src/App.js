@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import BrowseArticles from './pages/BrowseArticles.js';
 import BrowseTags from './pages/BrowseTags.js';
 import Create from './pages/Create.js';
+import NewArticle from './pages/NewArticle.js';
 import Home from './pages/Home.js';
 import DynamicTagPage from './pages/DynamicTagPage';
 import Freefallin from './articles/freefallin';
@@ -26,6 +27,8 @@ import SloMo from './articles/slo-mo';
 import Spiders from './articles/spiders';
 import Succubus from './articles/succubus';
 import TakingExams from './articles/taking-exams';
+import ArticleHome from './pages/ArticleHome';
+import DynamicArticle from './pages/DynamicArticle';
 
 function App() {
 
@@ -54,6 +57,7 @@ function App() {
               <Route path="/browse-articles" element={<BrowseArticles />} />
               <Route path="/browse-tags" element={<BrowseTags />} />
               <Route path="/create" element={<Create />} />
+              <Route path="/new-article" element={<NewArticle />} />
               <Route path=":id" element={<DynamicTagPage />} />
               <Route path="/freefallin" element={<Freefallin />} />
               <Route path="/you-killed-kenny" element={<YouKilledKenny />} />
@@ -67,6 +71,8 @@ function App() {
               <Route path="/spiders" element={<Spiders />} />
               <Route path="/succubus" element={<Succubus />} />
               <Route path="/taking-exams" element={<TakingExams />} />
+              <Route path="/article-home" element={<ArticleHome />} />
+              <Route path="/article/:id" element={<DynamicArticle />} />
             </Routes>
           </div>
           <Sidebar />

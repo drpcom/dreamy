@@ -31,6 +31,8 @@ const Footer = () => {
                     <p className="footer-heading">Additional Info</p>
                     <NavLink to="/privacy-policy"><p>Privacy Policy</p></NavLink>
                     <NavLink to="/disclaimers"><p>Disclaimers</p></NavLink>
+                    <NavLink to="/new-article"><p>New Article</p></NavLink>
+                    <NavLink to="/article-home"><p>Article Home</p></NavLink>
                 </div>
             </div>
         </div>
