@@ -33,7 +33,7 @@ const DynamicArticle = () => {
                     dispatch(remove());
                 }
             }
-        }, [dispatch, myArticle])
+        })
 
     // Grab the last five articles in the big array.
     const lastFive = fetch.allArticles.slice(-5);
