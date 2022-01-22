@@ -1,22 +1,35 @@
+.contact-container {
+  width: 100%;
+}
+
+.contact-title {
+  margin: 4rem 4rem 1rem 4rem;
+  color: #235c56;
+  font-weight: 100;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-email,
 .contact-email:focus {
-  display: flex;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   text-indent: 0.3rem;
-  outline: none;
+  width: 80%;
 }
 
 .contact-text,
 .contact-text:focus {
-  display: flex;
   font-size: 1.5rem;
-  margin-bottom: 0.4rem;
-  width: 400px;
+  margin-bottom: 0.5rem;
   resize: none;
   text-indent: 0.3rem;
   height: 200px;
-  outline: none;
+  width: 80%;
 }
 
 .contact-send {
@@ -26,17 +39,11 @@
   background: #235c56;
   color: white;
   font-family: unset;
-  font-size: 1.2rem;
-  width: 100%;
+  font-size: 1.3rem;
+  width: 80%;
 }
 
 .contact-send:hover {
   transition: all 0.2s ease-in-out;
   opacity: 0.9;
-}
-
-@media screen and (max-width: 530px) {
-  .contact-text {
-    width: 100%;
-  }
 }
