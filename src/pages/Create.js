@@ -3,6 +3,7 @@ import './Create.css';
 import { db } from '../backend/firebase_config';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import Banner from '../components/Banner';
 
 const Create = () => {
     const [newArticle, setNewArticle] = useState({
@@ -60,6 +61,8 @@ const Create = () => {
     }
 
     return (
+        <>
+        <Banner name="Create" link="/create" />
         <div className='create-container'>
             <h1>this is the create page.</h1>
             <form className="create-form" onSubmit={handleSubmit}>
@@ -132,6 +135,7 @@ const Create = () => {
             <button>Create</button>
             </form>
         </div>
+        </>
     )
 }
 
