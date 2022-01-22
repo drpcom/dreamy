@@ -56,9 +56,9 @@ const Navbar = () => {
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
-            <a href="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</a>
-            <a href="/articles" className="nav-link__burgered" onClick={() => Close()}>Articles</a>
-            <a href="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</a>
+            <Link to="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</Link>
+            <Link to="/articles" className="nav-link__burgered" onClick={() => Close()}>Articles</Link>
+            <Link to="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</Link>
             <a href={routeArray[random]} className="nav-link__burgered" onClick={() => Close()}>Random</a>
         </div>
         </>

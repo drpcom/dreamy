@@ -34,7 +34,7 @@ const Home = () => {
         <div className="home-container">
             <div className="welcome-banner">
                 <div className="welcome-title">
-                    <a href="/about"><p>dreamy.io</p></a>
+                    <Link to="/about"><p>dreamy.io</p></Link>
                 </div>
                 <div className="welcome-subtitle">
                     <p>You up?</p>
