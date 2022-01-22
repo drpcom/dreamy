@@ -1,14 +1,19 @@
 import React from 'react';
 import './Footer.css';
 import { NavLink } from 'react-router-dom';
-import allArticles from '../articles/allArticles';
+import { useArticleFetch } from './ArticleFetch';
 
 const Footer = () => {
 
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
+
     // Logic for the random article button.
     let routeArray = [];
-        allArticles.forEach((article) => {
-            routeArray.push(article.route);
+        fetch.allArticles.forEach((article) => {
+            const wholeRoute = "/articles/" + article.route
+            routeArray.push(wholeRoute);
         })
         let random = Math.floor(Math.random() * routeArray.length)
 
@@ -17,9 +22,10 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <p className="footer-heading">Explore</p>
-                    <NavLink to="/browse-articles"><p>Browse Articles</p></NavLink>
+                    <NavLink to="/articles"><p>Browse Articles</p></NavLink>
                     <NavLink to="/browse-tags"><p>Browse Tags</p></NavLink>
                     <a href={routeArray[random]}><p>Random Article</p></a>
+                    <NavLink to="/create"><p>Create New</p></NavLink>
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import allArticles from '../articles/allArticles';
+import { useArticleFetch } from '../components/ArticleFetch';
 import { useParams } from 'react-router-dom';
 import FeaturedBlurb from '../components/FeaturedBlurb';
 import './DynamicTagPage.css';
@@ -10,6 +10,10 @@ import Banner from '../components/Banner';
 
 const DynamicTagPage = () => {
     let params = useParams();
+
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
     function Randomize(array) {
         let currentIndex = array.length,  randomIndex;
@@ -31,7 +35,7 @@ const DynamicTagPage = () => {
 
     let tagsOnTags = [];
     let newArr = [];
-    allArticles.forEach((article) => {
+    fetch.allArticles.forEach((article) => {
         if (article.tags.includes(params.id)) { 
             newArr.push(article.tags)
             let merged = [].concat.apply([], newArr);
@@ -50,7 +54,8 @@ const DynamicTagPage = () => {
         }
         })
 
-    let randArticles = Randomize(allArticles);
+    // Show relevant articles in random order.
+    let randArticles = Randomize(fetch.allArticles);
 
     return (
         <>
@@ -63,10 +68,11 @@ const DynamicTagPage = () => {
                         <div key={i}>
                             <FeaturedBlurb 
                             heading={null}
-                            title={<a href={article.route}>{article.title}</a>}
-                            image={article.imageOne}
+                            title={<a href={`/articles/${article.route}`}>{article.title}</a>}
+                            triggered={article.triggered}
+                            image={article.image}
                             text={article.overview}
-                            link={article.route}
+                            link={`/article/${article.route}`}
                             />
                         </div>
                     )

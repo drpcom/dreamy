@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 import './Navbar.css';
 import dice from '../images/dice.png';
 import SearchBar from './SearchBar.js';
-import allArticles from '../articles/allArticles';
-import allTags from '../articles/allTags';
+import { useArticleFetch } from './ArticleFetch';
+import allTags from './allTags';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -16,11 +16,16 @@ const Navbar = () => {
     const Close = () => {
         setClick(false);
     }
+    
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
     // Logic for the random article button.
     let routeArray = [];
-        allArticles.forEach((article) => {
-            routeArray.push(article.route);
+        fetch.allArticles.forEach((article) => {
+            const wholeRoute = "/articles/" + article.route
+            routeArray.push(wholeRoute);
         })
         let random = Math.floor(Math.random() * routeArray.length)
 
@@ -34,13 +39,13 @@ const Navbar = () => {
                     </a>
                     <a href="/" className="nav-logo__title">dreamy.io</a>
                 </div>
-                <Link to="/browse-articles" className="nav-link">Articles</Link>
+                <Link to="/articles" className="nav-link">Articles</Link>
                 <p className="nav-divider">|</p>
                 <Link to="/browse-tags" className="nav-link">Tags</Link>
             </div>
             <div className="nav-right">
                 <div className="nav-search">
-                    <SearchBar allArticles={allArticles} allTags={allTags} />
+                    <SearchBar allArticles={fetch.allArticles} allTags={allTags} />
                 </div>
                 <a href={routeArray[random]} className="nav-link">
                     <img src={dice} alt="dice" />
@@ -52,7 +57,7 @@ const Navbar = () => {
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
             <a href="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</a>
-            <a href="/browse-articles" className="nav-link__burgered" onClick={() => Close()}>Articles</a>
+            <a href="/articles" className="nav-link__burgered" onClick={() => Close()}>Articles</a>
             <a href="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</a>
             <a href={routeArray[random]} className="nav-link__burgered" onClick={() => Close()}>Random</a>
         </div>

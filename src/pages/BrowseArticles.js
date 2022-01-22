@@ -1,12 +1,17 @@
 import React, {useEffect} from 'react'
 import './BrowseArticles.css';
-import allArticles from '../articles/allArticles';
+import { useArticleFetch } from '../components/ArticleFetch';
 import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
 
 const BrowseArticles = () => {
+
+    // Grabs all articles from DB.
+    const fetch = useArticleFetch()
+    console.log(fetch.allArticles)
 
     const baseTags = ['anxiety', 'exhilarating', 'fear', 'true awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
 
@@ -16,7 +21,7 @@ const BrowseArticles = () => {
     const sortArray = (x,y) => {
         return x.title.localeCompare(y.title);
     }
-    allArticles.sort(sortArray);
+    fetch.allArticles.sort(sortArray);
 
     useEffect(() => {
         dispatch(add({ tags: baseTags}));
@@ -27,17 +32,18 @@ const BrowseArticles = () => {
 
     return (
         <>
-        <Banner name="Articles" link="/browse-articles" />
+        <Banner name="Articles" link="/articles" />
         <div className="browse-container">
-            {allArticles.map((article, i) => {
+            {fetch.allArticles.map((article, i) => {
                 return (
                     <div key={i} className="mini-article-container">
                         <div className="mini-image-container">
-                            <a href={article.route}><img src={article.imageOne} alt={article.id} /></a>
+                            <Link to={article.route}><img src={article.image} alt={article.image} /></Link>
                         </div>
                         <div className="mini-title-container">
                             <div className="mini-title">
-                                <a href={article.route}>{article.title}</a>
+                                <Link to={article.route}>{article.title}</Link>
+                                {article.triggered ? <sup className="t-w">[TW]</sup> : null}
                             </div>                       
                         </div>
                         <div className="mini-desc-container">
