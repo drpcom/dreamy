@@ -7,7 +7,7 @@ const Banner = ({name, link}) => {
         <div className="banner-container">
             <div className="banner">
                 <p className="slashAndHome"><Link to="/">Home</Link></p>
-                <p className="slashAndLink">/ <a href={link}>{name}</a></p>
+                <p className="slashAndLink">/ {name}</p>
             </div>
         </div>
     )

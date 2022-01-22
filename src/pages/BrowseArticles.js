@@ -32,7 +32,7 @@ const BrowseArticles = () => {
 
     return (
         <>
-        <Banner name="Articles" link="/articles" />
+        <Banner name="Articles A - Z" link="/articles" />
         <div className="browse-container">
             {fetch.allArticles.map((article, i) => {
                 return (

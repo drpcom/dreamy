@@ -16,11 +16,7 @@
 .slashAndLink {
   color: whitesmoke;
   margin-right: 0.5rem;
-}
-
-.slashAndLink > a {
-  color: whitesmoke;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .slashAndHome {
