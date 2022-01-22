@@ -69,6 +69,7 @@ const DynamicTagPage = () => {
                             <FeaturedBlurb 
                             heading={null}
                             title={<a href={`/articles/${article.route}`}>{article.title}</a>}
+                            triggered={article.triggered}
                             image={article.image}
                             text={article.overview}
                             link={`/article/${article.route}`}

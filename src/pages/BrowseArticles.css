@@ -128,11 +128,19 @@ a > img {
 
 .mini-title {
   width: 100%;
+  display: flex;
 }
 
 .mini-title > a {
   text-decoration: none;
   color: #235c56;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.t-w {
+  color: purple;
+  font-size: 12px;
   font-weight: 700;
 }
 

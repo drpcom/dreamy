@@ -43,6 +43,7 @@ const BrowseArticles = () => {
                         <div className="mini-title-container">
                             <div className="mini-title">
                                 <Link to={article.route}>{article.title}</Link>
+                                {article.triggered ? <sup className="t-w">[TW]</sup> : null}
                             </div>                       
                         </div>
                         <div className="mini-desc-container">

@@ -44,6 +44,7 @@ const Home = () => {
                 <FeaturedBlurb 
                 heading=":: Featured Entry ::" 
                 title={<Link to={`/articles/${fetch.allArticles[0].route}`}>{fetch.allArticles[0].title}</Link>}
+                triggered={fetch.allArticles[0].triggered}
                 image={fetch.allArticles[0].image}
                 text={fetch.allArticles[0].overview}
                 link={`/articles/${fetch.allArticles[0].route}`}
@@ -51,6 +52,7 @@ const Home = () => {
                 <FeaturedBlurb 
                 heading="::Newest Entry ::" 
                 title={<Link to={`/articles/${fetch.allArticles[1].route}`}>{fetch.allArticles[1].title}</Link>}
+                triggered={fetch.allArticles[1].triggered}
                 image={fetch.allArticles[1].image}
                 text={fetch.allArticles[1].overview}
                 link={`/articles/${fetch.allArticles[1].route}`}
@@ -74,6 +76,7 @@ const Home = () => {
                 <FeaturedBlurb 
                 heading=":: Discover ::" 
                 title={<Link to={`/articles/${fetch.allArticles[2].route}`}>{fetch.allArticles[2].title}</Link>}
+                triggered={fetch.allArticles[2].triggered}
                 image={fetch.allArticles[2].image}
                 text={fetch.allArticles[2].overview}
                 link={`/articles/${fetch.allArticles[2].route}`}

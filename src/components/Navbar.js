@@ -42,8 +42,6 @@ const Navbar = () => {
                 <Link to="/articles" className="nav-link">Articles</Link>
                 <p className="nav-divider">|</p>
                 <Link to="/browse-tags" className="nav-link">Tags</Link>
-                <p className="nav-divider">|</p>
-                <Link to="/create" className="nav-link">Create</Link>
             </div>
             <div className="nav-right">
                 <div className="nav-search">

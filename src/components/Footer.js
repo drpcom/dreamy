@@ -25,6 +25,7 @@ const Footer = () => {
                     <NavLink to="/articles"><p>Browse Articles</p></NavLink>
                     <NavLink to="/browse-tags"><p>Browse Tags</p></NavLink>
                     <a href={routeArray[random]}><p>Random Article</p></a>
+                    <NavLink to="/create"><p>Create New</p></NavLink>
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>
