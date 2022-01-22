@@ -24,10 +24,12 @@ const Navbar = () => {
     // Logic for the random article button.
     let routeArray = [];
         fetch.allArticles.forEach((article) => {
-            const wholeRoute = "/articles/" + article.route
+            const wholeRoute = article.route
             routeArray.push(wholeRoute);
         })
         let random = Math.floor(Math.random() * routeArray.length)
+
+        console.log(routeArray[random])
 
     return (
         <>
@@ -47,9 +49,9 @@ const Navbar = () => {
                 <div className="nav-search">
                     <SearchBar allArticles={fetch.allArticles} allTags={allTags} />
                 </div>
-                <a href={routeArray[random]} className="nav-link">
+                <Link to={`/articles/${routeArray[random]}`} className="nav-link">
                     <img src={dice} alt="dice" />
-                </a>
+                </Link>
                 <div className="nav-menu" onClick={() => handleClick()}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </div>
@@ -59,7 +61,7 @@ const Navbar = () => {
             <Link to="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</Link>
             <Link to="/articles" className="nav-link__burgered" onClick={() => Close()}>Articles</Link>
             <Link to="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</Link>
-            <a href={routeArray[random]} className="nav-link__burgered" onClick={() => Close()}>Random</a>
+            <Link to={`/articles/${routeArray[random]}`} className="nav-link__burgered" onClick={() => Close()}>Random</Link>
         </div>
         </>
     )
