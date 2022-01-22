@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 import dice from '../images/dice.png';
-import SearchBar from './SearchBar.js';
+import SearchBar from './articleSearch.js';
 import { useArticleFetch } from './ArticleFetch';
 import allTags from './allTags';
 

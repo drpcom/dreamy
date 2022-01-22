@@ -37,11 +37,31 @@
   font-weight: bold;
 }
 
+.article-search-link {
+  background: white;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  line-height: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 .search-link > a:visited {
   color: rgb(54, 54, 54);
 }
 
+.article-search-link > a:visited {
+  color: rgb(54, 54, 54);
+}
+
 .search-link:hover {
+  background: rgb(209, 209, 209);
+  transition: all 0.1s ease-in-out;
+}
+
+.article-search-link:hover {
   background: rgb(209, 209, 209);
   transition: all 0.1s ease-in-out;
 }
