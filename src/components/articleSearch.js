@@ -48,12 +48,12 @@ const SearchBar = ({allArticles}) => {
     }
     return (
         <>
-            <div className="search-input">
+            <div className="article-search-input">
                 <input type="text" placeholder='Search' onChange={handleFilter} />
                 <div className="search-icon"></div>
             </div>
             {filteredData.length !== 0 && (
-            <div className="data-result" ref={domNode} onClick={clearResults}>
+            <div className="article-data-result" ref={domNode} onClick={clearResults}>
                 {filteredData.slice(0, 15).map((value, i) => {
                     return <Link to={`/articles/${value}`} key={i} className="article-search-link">{value}</Link>
                 })}

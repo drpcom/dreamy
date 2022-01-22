@@ -4,7 +4,6 @@ import './Navbar.css';
 import dice from '../images/dice.png';
 import SearchBar from './articleSearch.js';
 import { useArticleFetch } from './ArticleFetch';
-import allTags from './allTags';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -47,7 +46,7 @@ const Navbar = () => {
             </div>
             <div className="nav-right">
                 <div className="nav-search">
-                    <SearchBar allArticles={fetch.allArticles} allTags={allTags} />
+                    <SearchBar allArticles={fetch.allArticles} />
                 </div>
                 <Link to={`/articles/${routeArray[random]}`} className="nav-link">
                     <img src={dice} alt="dice" />

@@ -1,7 +1,8 @@
 import React,{ useState, useRef, useEffect } from 'react';
 import './SearchBar.css';
+import { Link } from 'react-router-dom';
 
-const SearchBar = ({allArticles, allTags}) => {
+const SearchBar = ({allTags}) => {
 
     const [filteredData, setFilteredData] = useState([]);
 
@@ -25,10 +26,6 @@ const SearchBar = ({allArticles, allTags}) => {
     }
 
     let data = [];
-    allArticles.forEach((article) => {
-        data.push(article.route);
-        // console.log(data)
-    })
     allTags.forEach((tag) => {
         data.push(tag.id)
         // console.log(data)
@@ -51,14 +48,14 @@ const SearchBar = ({allArticles, allTags}) => {
     }
     return (
         <>
-            <div className="search-input">
-                <input type="text" placeholder='Search' onChange={handleFilter} />
+            <div className="tag-search-input">
+                <input type="text" placeholder='Search Tags' onChange={handleFilter} />
                 <div className="search-icon"></div>
             </div>
             {filteredData.length !== 0 && (
-            <div className="data-result" ref={domNode} onClick={clearResults}>
+            <div className="tag-data-result" ref={domNode} onClick={clearResults}>
                 {filteredData.slice(0, 15).map((value, i) => {
-                    return <a href={value} key={i} className="search-link">{value}</a>
+                    return <Link to={value} key={i} className="tag-search-link">{value}</Link>
                 })}
             </div>
             )}
