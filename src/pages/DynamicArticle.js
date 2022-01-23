@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { add } from '../features/tagsList';
 import { remove } from '../features/tagsList';
 import './DynamicArticle.css';
+import Banner from '../components/Banner';
 
 const DynamicArticle = () => {
     
@@ -40,7 +41,9 @@ const DynamicArticle = () => {
 
   return (
       <>
-        {myArticle.length > 0 && 
+      {myArticle.length > 0 && 
+            <>
+            <Banner name={myArticle[0].route} link="/browse-tags"/>
             <div className="article-container">
             <div className="article-title">
                 <h1>{myArticle[0].title}</h1>
@@ -81,6 +84,7 @@ const DynamicArticle = () => {
             </div>
             </div>
             </div>
+            </>
         }
       </>
     );

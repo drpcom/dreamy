@@ -5,7 +5,6 @@ const allTags = [
     {id: 'ominous'},
     {id: 'morbid'},
     {id: 'true-awakening'}, 
-    {id: 'false-awakening'},
     {id: 'recurring'}, 
     {id: 'pre-human'}, 
     {id: 'phobia'}, 

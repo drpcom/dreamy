@@ -102,16 +102,14 @@
 .mini-article-container {
   text-align: -webkit-center;
   background: #cadecb;
-  padding: 1rem;
+  padding: 0.8rem;
   margin: 1rem;
   border-radius: 4px;
 }
 
 .mini-image-container {
-  /* width: 250px;
-  height: 186px; */
-  width: 239px;
-  height: 150px;
+  width: 257px;
+  height: 161px;
 }
 
 a > img {
