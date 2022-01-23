@@ -40,15 +40,15 @@ const Navbar = () => {
                     </Link>
                     <Link to="/" className="nav-logo__title">dreamy.io</Link>
                 </div>
-                <Link to="/articles" className="nav-link">Articles</Link>
+                <Link to="/articles" className="nav-link" id="articles">Articles</Link>
                 <p className="nav-divider">|</p>
-                <Link to="/browse-tags" className="nav-link">Tags</Link>
+                <Link to="/browse-tags" className="nav-link" id="tags">Tags</Link>
             </div>
             <div className="nav-right">
-                <div className="nav-search">
+                <div className="nav-search" id="search">
                     <SearchBar allArticles={fetch.allArticles} />
                 </div>
-                <Link to={`/articles/${routeArray[random]}`} className="nav-link">
+                <Link to={`/articles/${routeArray[random]}`} className="nav-link" id="random">
                     <img src={dice} alt="dice" />
                 </Link>
                 <div className="nav-menu" onClick={() => handleClick()}>

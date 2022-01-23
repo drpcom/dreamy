@@ -40,6 +40,7 @@ const Home = () => {
                     <p>You up?</p>
                 </div>
             </div>
+            <Link to="/articles"><button className="mobile-articles-button">Browse Articles</button></Link>
             <div className="section-one">
                 <FeaturedBlurb 
                 heading=":: Featured Entry ::" 
