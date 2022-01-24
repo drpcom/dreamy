@@ -5,7 +5,7 @@ import 'firebase/firestore';
 
 export function useTagsFetch() {
     const [everyTag, setEveryTag] = useState([]);
-    
+
         useEffect(() => {
             
             const retrieveAll = async () => {
@@ -24,7 +24,7 @@ export function useTagsFetch() {
             
             retrieveAll();
             
-        },[])
+        })
         return {everyTag, setEveryTag};
 
     }
