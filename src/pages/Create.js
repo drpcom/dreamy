@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import './Create.css';
 import { db } from '../backend/firebase_config';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
 import Banner from '../components/Banner';
+import firebase from 'firebase/app';
 
 const Create = () => {
     const [newArticle, setNewArticle] = useState({
@@ -21,18 +20,12 @@ const Create = () => {
     const [valid, setValid] = useState(false);
 
     const writeToDB = async() => {
-            await db.collection("Articles").add({
-            id: Math.floor(Math.random() * 999999999),
-            title: newArticle.title,
-            route: newArticle.route,
-            triggered: newArticle.triggered,
-            image: newArticle.image,
-            subheading: newArticle.subheading,
-            credit: newArticle.credit,
-            overview: newArticle.overview,
-            interpretation: newArticle.interpretation,
-            tags: newArticle.tags.split(','),
-        })
+            const tagsToImport = newArticle.tags.split(',');
+            const tagsArr = db.collection("Tags").doc('9mbewr5gGihaX2sefiOG');
+            await tagsArr.update({
+                tags: firebase.firestore.FieldValue.arrayUnion(...tagsToImport),
+            })
+
     }
 
     const handleSubmit = (e) => {

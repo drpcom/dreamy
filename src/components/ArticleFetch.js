@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { db } from '../backend/firebase_config';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import 'firebase/auth';
+import 'firebase/firestore';
 
 export function useArticleFetch() {
     const [allArticles, setAllArticles] = useState([]);
