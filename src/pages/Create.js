@@ -20,6 +20,21 @@ const Create = () => {
     const [valid, setValid] = useState(false);
 
     const writeToDB = async() => {
+        // Sending the form info to the correct collection.
+        await db.collection("Articles").add({
+            id: Math.floor(Math.random() * 999999999),
+            title: newArticle.title,
+            route: newArticle.route,
+            triggered: newArticle.triggered,
+            image: newArticle.image,
+            subheading: newArticle.subheading,
+            credit: newArticle.credit,
+            overview: newArticle.overview,
+            interpretation: newArticle.interpretation,
+            tags: newArticle.tags.split(','),
+        })
+
+            // Sending the tags to the correct collection.
             const tagsToImport = newArticle.tags.split(',');
             const tagsArr = db.collection("Tags").doc('9mbewr5gGihaX2sefiOG');
             await tagsArr.update({
