@@ -24,7 +24,8 @@ export function useTagsFetch() {
             
             retrieveAll();
             
-        })
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+        },[])
         return {everyTag, setEveryTag};
 
     }
