@@ -27,7 +27,7 @@ const SearchBar = ({allTags}) => {
 
     let data = [];
     allTags.forEach((tag) => {
-        data.push(tag.id)
+        data.push(tag)
         // console.log(data)
     })
 

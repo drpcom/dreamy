@@ -3,12 +3,16 @@ import './Sidebar.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import SearchBar from './tagSearch.js';
-import allTags from './allTags';
+import { useTagsFetch } from './TagsFetch';
 
 const Sidebar = () => {
 
     const tagsList = useSelector(state => state.tagsList.value)
     console.log(tagsList.tags)
+
+    // Grabs all tags from DB.
+    const fetchTags = useTagsFetch()
+    console.log(fetchTags.everyTag)
 
     return (
         <div className="sidebar-container">
@@ -16,7 +20,7 @@ const Sidebar = () => {
                 <h2>Tags</h2>
             </div>
             <div className="sidebar-search">
-                <SearchBar allTags={allTags} />
+                <SearchBar allTags={fetchTags.everyTag} />
             </div>
             <div className="sidebar-content">
                 {tagsList.tags ? tagsList.tags.map((item, i) => {
