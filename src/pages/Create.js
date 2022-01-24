@@ -72,7 +72,7 @@ const Create = () => {
         <>
         <Banner name="Create" link="/create" />
         <div className='create-container'>
-            <h1 className="create-heading">this is the create page.</h1>
+            <h1 className="create-heading">Article Creation</h1>
             <form className="create-form" onSubmit={handleSubmit}>
             {submitted && valid ? <div className='success-message'>Success! You've made an article!</div> : null}
             <input 
@@ -106,7 +106,7 @@ const Create = () => {
             <input 
             type="text" 
             name="image" 
-            placeholder="Image" 
+            placeholder="Image URL" 
             className="create-image"
             value={newArticle.image}
             onChange={e => setNewArticle({...newArticle, image: e.target.value})}
@@ -145,7 +145,7 @@ const Create = () => {
             />
             <textarea 
             name="tags" 
-            placeholder="Tags" 
+            placeholder="Tags separated by comma (no spaces)" 
             className="create-tags"
             required 
             value={newArticle.tags}
