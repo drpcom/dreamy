@@ -3,12 +3,12 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCWSzDycgpmkOz4JWl7tzk6AWk5IjvgA9U",
-    authDomain: "dreamy-d3553.firebaseapp.com",
-    projectId: "dreamy-d3553",
-    storageBucket: "dreamy-d3553.appspot.com",
-    messagingSenderId: "201933833590",
-    appId: "1:201933833590:web:6f1c344da5669e691b2657"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
   };
 
   firebase.initializeApp(firebaseConfig);
