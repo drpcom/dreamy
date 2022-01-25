@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <p className="footer-heading">Overview</p>
-                    <NavLink to="/about"><p>What is Dreamy.io?</p></NavLink>
+                    <NavLink to="/about"><p>What is Dreamy?</p></NavLink>
                     <NavLink to="/contact"><p>Contact Us</p></NavLink>
                     <NavLink to="/terms"><p>Terms of Use</p></NavLink>
                 </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
                     <Link to="/" className="nav-logo__img">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
                     </Link>
-                    <Link to="/" className="nav-logo__title">dreamy.io</Link>
+                    <Link to="/" className="nav-logo__title">dreamy</Link>
                 </div>
                 <Link to="/articles" className="nav-link" id="articles">Articles</Link>
                 <p className="nav-divider">|</p>
@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
         </nav>
         <div className={click ? "dropdown-open" : "dropdown-closed"}>
-            <Link to="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy.io?</Link>
+            <Link to="/about" className="nav-link__burgered" onClick={() => Close()}>What is Dreamy?</Link>
             <Link to="/articles" className="nav-link__burgered" onClick={() => Close()}>Articles</Link>
             <Link to="/browse-tags" className="nav-link__burgered" onClick={() => Close()}>Tags</Link>
             <Link to={`/articles/${routeArray[random]}`} className="nav-link__burgered" onClick={() => Close()}>Random</Link>
