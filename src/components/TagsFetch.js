@@ -15,7 +15,6 @@ export function useTagsFetch() {
 
                     const data = document.data().tags;
                     setEveryTag(data)
-                    console.log('data is:', everyTag)
                     
                 } catch (error) {
                     console.log("Unable to grab tags :(")

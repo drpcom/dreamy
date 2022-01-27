@@ -8,11 +8,9 @@ import { useTagsFetch } from './TagsFetch';
 const Sidebar = () => {
 
     const tagsList = useSelector(state => state.tagsList.value)
-    console.log(tagsList.tags)
 
     // Grabs all tags from DB.
     const fetchTags = useTagsFetch()
-    console.log(fetchTags.everyTag)
 
     return (
         <div className="sidebar-container">

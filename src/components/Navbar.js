@@ -18,7 +18,6 @@ const Navbar = () => {
     
     // Grabs all articles from DB.
     const fetch = useArticleFetch()
-    console.log(fetch.allArticles)
 
     // Logic for the random article button.
     let routeArray = [];
@@ -28,7 +27,6 @@ const Navbar = () => {
         })
         let random = Math.floor(Math.random() * routeArray.length)
 
-        console.log(routeArray[random])
 
     return (
         <>

@@ -7,7 +7,6 @@ const Footer = () => {
 
     // Grabs all articles from DB.
     const fetch = useArticleFetch()
-    console.log(fetch.allArticles)
 
     // Logic for the random article button.
     let routeArray = [];

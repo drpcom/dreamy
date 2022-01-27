@@ -23,7 +23,6 @@ const BrowseTags = () => {
     
     // Grabs all tags from DB.
     const fetchTags = useTagsFetch()
-    console.log(fetchTags.everyTag)
     
     // This chunk of code alphabetizes the array of all tags. 
     let arr = [];
@@ -31,7 +30,6 @@ const BrowseTags = () => {
         arr.push(tag)
     })
     let alphabetizedTags = arr.sort((a,b) => a.localeCompare(b));
-    console.log(alphabetizedTags)
 
     return (
         <>

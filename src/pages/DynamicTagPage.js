@@ -13,7 +13,6 @@ const DynamicTagPage = () => {
 
     // Grabs all articles from DB.
     const fetch = useArticleFetch()
-    console.log(fetch.allArticles)
 
     function Randomize(array) {
         let currentIndex = array.length,  randomIndex;

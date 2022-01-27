@@ -11,7 +11,6 @@ const Home = () => {
 
     // Grabs all articles from DB.
     const fetch = useArticleFetch()
-    console.log(fetch.allArticles)
     
     // Initialize tags and dispatch to store.
     const baseTags = ['anxiety', 'exhilarating', 'fear', 'true-awakening', 'recurring', 'super powers', 'death', 'frustration', 'bruh',  'childhood', 'funny', 'phobia', 'woke up mad', 'sex', 'pre-human']
@@ -26,7 +25,6 @@ const Home = () => {
         })
 
     const lastFive = fetch.allArticles.slice(-5);
-    console.log(fetch.allArticles)
 
     return (
         <>

@@ -14,7 +14,6 @@ const DynamicArticle = () => {
 
     // Grabs all articles from DB.
     const fetch = useArticleFetch()
-    console.log(fetch.allArticles)
 
     // Finds single relevant article.
     const myArticle = [];
@@ -23,7 +22,6 @@ const DynamicArticle = () => {
             myArticle.push(article)
         }
     })
-    console.log("my article is: ", myArticle)
 
     const dispatch = useDispatch();
 
