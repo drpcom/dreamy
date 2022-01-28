@@ -5,25 +5,25 @@
     {
       "src" : "dreamy-logo-192x192.png",
       "type" : "image/png",
-      "sizes" : "192x",
+      "sizes" : "192x192",
       "purpose": "any maskable"
     },
     {
       "src" : "dreamy-logo-256x256.png",
       "type" : "image/png",
-      "sizes" : "256x",
+      "sizes" : "256x256",
       "purpose": "any maskable"
     },
     {
       "src" : "dreamy-logo-384x384.png",
       "type" : "image/png",
-      "sizes" : "384x",
+      "sizes" : "384x384",
       "purpose": "any maskable"
     },
     {
       "src" : "dreamy-logo-512x512.png",
       "type" : "image/png",
-      "sizes" : "512x",
+      "sizes" : "512x512",
       "purpose": "any maskable"
     }
   ],
