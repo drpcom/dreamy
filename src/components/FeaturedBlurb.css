@@ -67,5 +67,13 @@
   }
 }
 
-/* @supports (-webkit-overflow-scrolling: touch) {}
-  /* CSS specific to iOS devices */
+/* CSS specific to iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  .featured-content > img {
+    float: none;
+  }
+
+  .featured-content {
+    -webkit-line-clamp: 5;
+  }
+}
