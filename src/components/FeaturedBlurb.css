@@ -68,6 +68,7 @@
 }
 
 /* CSS specific to iOS devices */
+/* This fixes the problem with float property in iOS */
 @supports (-webkit-overflow-scrolling: touch) {
   .featured-content > img {
     float: none;
