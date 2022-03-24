@@ -43,7 +43,7 @@
 To run this project, install it locally using npm:
 
 ```
-$ cd ../dreamy
+$ cd dreamy
 $ npm install
 $ npm start
 ```
