@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Dreamy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Wiki-esque encyclopedia of common dreams created using React, Redux, and Firebase.
+> Website [_here_](https://sleepy-haibt-d254a5.netlify.app/).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Demo](#demo)
+- [Setup](#setup)
+- [Project Status](#project-status)
+- [TODO](#todo)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-### `yarn start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This project is a database of common dreams that users can add to. It was created as an excercise in building a content-heavy web app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `yarn test`
+- React - 17.0.2
+- Redux - 4.1.2
+- React-Redux - 7.2.6
+- Reduxjs/toolkit - 1.7.1
+- Firebase 8.2.3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `yarn build`
+- Relevant tags generated on every article page.
+- Browse by articles/browse by tags
+- Progressive Web App
+- Create an article
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![demo](https://firebasestorage.googleapis.com/v0/b/dreamy-d3553.appspot.com/o/dreamyScreen.gif?alt=media&token=173d2dbd-5537-40e6-9053-22b61818598b)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `yarn eject`
+To run this project, install it locally using npm:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+$ cd dreamy
+$ npm install
+$ npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Status
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project is: _in progress_
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## TODO
 
-## Learn More
+- Add Auth
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Images courtesy of [Unsplash](https://www.unsplash.com).
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by [Jamie Augustine](https://cranky-wilson-97c459.netlify.app/) - feel free to contact me!
