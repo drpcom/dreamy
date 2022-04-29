@@ -6,8 +6,6 @@
 }
 
 .featured-content {
-  /* height: 276px;
-  overflow: hidden; */
   display: -webkit-inline-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 10;
