@@ -36,7 +36,7 @@
 
 ## Demo
 
-![demo](https://firebasestorage.googleapis.com/v0/b/dreamy-d3553.appspot.com/o/dreamyScreen.gif?alt=media&token=173d2dbd-5537-40e6-9053-22b61818598b)
+![demo](https://firebasestorage.googleapis.com/v0/b/dreamy-app-f1406.appspot.com/o/dreamyScreen.gif?alt=media&token=3ffab6d2-f235-4ea4-bada-c5a4b6714142)
 
 ## Setup
 
